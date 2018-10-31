@@ -1,0 +1,13 @@
+$molecule
+3 4
+O         -2.11771        2.84524        1.90186
+O         -1.27741        2.18552        1.47373
+Fe        -2.81544        4.11050        2.04380
+$end
+
+$rem
+BASIS = VDZ
+METHOD  = B3LYP
+JOBTYPE = OPT
+MAX_SCF_CYCLES = 500
+$end
