@@ -9,18 +9,7 @@ $end
 $rem
    JOBTYPE                  OPT
    EXCHANGE                 B3LYP
-   BASIS                    3-21g
-   UNRESTRICTED             FALSE
-   SYMMETRY                 FALSE
-   SYM_IGNORE               TRUE
-   THRESH                   14
-   SCF_GUESS                CORE
-   GEN_SCFMAN               TRUE
-   GEN_SCFMAN_HYBRID_ALGO   TRUE
-   GEN_SCFMAN_ALGO_1        ADIIS
-   GEN_SCFMAN_CONV_1        3  !switch to DIIS when error < 1E-3
-   GEN_SCFMAN_ITER_1        50  
-   GEN_SCFMAN_ALGO_2        DIIS
-   GEN_SCFMAN_CONV_2        8
-   GEN_SCFMAN_ITER_2        50 
+   BASIS                    VDZ
+   MAX_SCF_CYCLES = 500
+   SCF_ALGORITHM = DIIS_GDM
 $end
