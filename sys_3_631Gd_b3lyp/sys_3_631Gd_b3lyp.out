@@ -1,7 +1,7 @@
 
 Running Job 1 of 1 sys_3_631Gd_b3lyp.in
-qchem sys_3_631Gd_b3lyp.in_28058.0 /scr/c295_lal/137057/qchem28058/ 1
-/usr/software/qchem_511/exe/qcprog.exe_s sys_3_631Gd_b3lyp.in_28058.0 /scr/c295_lal/137057/qchem28058/
+qchem sys_3_631Gd_b3lyp.in_9151.0 /scr/c295_lal/137062/qchem9151/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s sys_3_631Gd_b3lyp.in_9151.0 /scr/c295_lal/137062/qchem9151/
 Check license passed
 
                   Welcome to Q-Chem
@@ -73,19 +73,142 @@ Check license passed
  Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
  http://arma.sourceforge.net/
 
- Q-Chem begins on Wed Oct 31 14:40:36 2018  
+ Q-Chem begins on Wed Oct 31 15:02:51 2018  
 
-Host: cub-0-2.local
+Host: cub-0-22.local
 0
 
-     Scratch files written to /scr/c295_lal/137057/qchem28058//
+     Scratch files written to /scr/c295_lal/137062/qchem9151//
  Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
 Processing $rem in /usr/software/qchem_511/config/preferences.
  MEM_TOTAL  2000 
+Input Ideriv = 1
+Curr. Ideriv = -1
+Max.  Ideriv = 1
 
- Q-Chem fatal error occurred in module qparser/MoleculeInput.C, line 736:
+Checking the input file for inconsistencies... 	...done.
 
- Invalid charge/multiplicity combination in MoleculeInput::getNElectrons!
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+2 5
+O         -2.11771        2.84524        1.90186
+O         -1.27741        2.18552        1.47373
+Fe        -2.81544        4.11050        2.04380
+$end
+
+
+$rem
+JOBTYPE                  OPT
+EXCHANGE                 B3LYP
+BASIS                    3-21g
+UNRESTRICTED             FALSE
+SYMMETRY                 FALSE
+SYM_IGNORE               TRUE
+THRESH                   14
+SCF_GUESS                CORE
+GEN_SCFMAN               TRUE
+GEN_SCFMAN_HYBRID_ALGO   TRUE
+GEN_SCFMAN_ALGO_1        ADIIS
+GEN_SCFMAN_CONV_1        3  !switch to DIIS when error < 1E-3
+GEN_SCFMAN_ITER_1        50
+GEN_SCFMAN_ALGO_2        DIIS
+GEN_SCFMAN_CONV_2        8
+GEN_SCFMAN_ITER_2        50
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      O      -2.1177100000     2.8452400000     1.9018600000
+    2      O      -1.2774100000     2.1855200000     1.4737300000
+    3      Fe     -2.8154400000     4.1105000000     2.0438000000
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =   148.7611358301 hartrees
+ There are       22 alpha and       18 beta electrons
+ Requested basis set is 3-21G
+ There are 13 shells and 47 basis functions
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+ A cutoff of  1.0D-14 yielded     86 shell pairs
+ There are      1190 function pairs
+ 
+ -------------------------------------------------------
+ OpenMP Integral Computing Module                       
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ Integral Job Info:
+ Integral job number is                      11
+ Integral operator is                         1
+ short-range coefficients                     0
+ long-range coefficients              100000000
+ Omega coefficients                           0
+ if combine SR and LR in K                    0
+ Integral screening is                        0
+ Integral computing path is                   2
+ max size of driver memory is            800000
+ size of driver memory is                593474
+ size of scratch memory is              2563512
+ max col of scratch BK array               1296
+ max len of scratch array in speh3          155
+ max len of scratch index in speh4           18
+ max int batch size is                      520
+ min int batch size is                       52
+ fixed nKL is                                52
+ max L of basis functions is                  2
+ order of int derivative is                   0
+ number of shells is                         13
+ number of basis is                          47
+ number of cartesian basis is                47
+ number of contracted shell pairs            86
+ number of primitive shell pairs            319
+ maxK2 (contraction) of shell pair            9
+ max number of K2 of shell pair               1
+ max number of CS2 of shell pair             11
+ max number of PS2 of shell pair             48
+ mem total for path MDJ                  509598
+ -------------------------------------------------------
+ Smallest overlap matrix eigenvalue = 4.76E-03
+
+ Scale SEOQF with 1.000000e-01/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =     0.0000000312 hartrees
+ Guess MOs from core Hamiltonian diagonalization
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using SG-1 standard quadrature grid
+ using 12 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted open-shell SCF calculation will be
+ performed using ADIIS, DIIS
+ADIIS max subspace size: 6
+ ---------------------------------------
+  Cycle       Energy          Error
+ ---------------------------------------
+gen_scfman_exception: objective_function: get_vector_adiis is not implemented in inheriting class.
+
+ Q-Chem fatal error occurred in module libgscf/gen_scfman/gen_scfman_main.C, line 142:
+
+ Error in gen_scfman
 
 
  Please submit a crash report at q-chem.com/reporter 
