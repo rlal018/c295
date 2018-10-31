@@ -2,6 +2,7 @@ $rem
    JOBTYPE Opt
    EXCHANGE B3LYP
    BASIS 6-31G(d)
+   MAX_SCF_CYCLES = 500
    GUI=2
 $end
 
@@ -10,7 +11,7 @@ sys_3
 $end
 
 $molecule
-   3 2
+   3 4
    O        1.67468        0.46332        0.00000
    O        0.94033       -0.42288        0.00000
   Fe       -0.91909       -0.10709        0.00000
