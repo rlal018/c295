@@ -1,11 +1,0 @@
-$molecule 
-0 1 ! Charge=0 and spin multiplicity=1 (this is 2S+1 where S is spin) 
-H 0 0 0   ! nuclear coordinates, disntances in angstrom 
-H 0 0 0.74 
-$end
-
-$rem 
-BASIS = 6-31G ! basis set
- METHOD = HF ! Quantum chemistry method 
-JOBTYPE = SP ! (SP= Single point, this is default. Can be force (for gradient), opt (for optimization), ts (for TS optimization), freq (for frequency calculations etc etc..) 
-$end
