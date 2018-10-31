@@ -1,0 +1,28 @@
+#!/bin/tcsh -f
+#$ -cwd
+#$ -o his_opt_631g.job.o$JOB_ID
+#$ -q cubs.q
+#$ -j y
+#$ -N q-his_opt_631g
+#$ -pe shared 4
+
+
+setenv QC /usr/software/qchem_511
+source /usr/software/qchem_511/MGCF_qcenv.csh
+
+cd $SGE_O_WORKDIR
+/bin/hostname
+
+set echo
+setenv PATH /usr/software/nbo6_g16/bin:${PATH}
+setenv NBOEXE /usr/software/nbo6_g16/bin/nbo6.i8.exe
+awk '{ print $1 }' $PE_HOSTFILE > his_opt_631g.nodes
+setenv QCMACHINEFILE his_opt_631g.nodes
+setenv QCSCRATCH $SGE_O_WORKDIR/$JOB_ID
+/bin/mkdir -p $QCSCRATCH
+setenv QCLOCALSCR /scr/$USER/$JOB_ID
+/bin/mkdir -p $QCLOCALSCR
+/usr/bin/env
+
+/usr/software/qchem_511/bin/qchem -nt 4 his_opt_631g.in his_opt_631g.out
+
