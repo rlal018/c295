@@ -1,0 +1,2523 @@
+
+Running Job 1 of 1 sys_1_opt_vdz_gga.in
+qchem sys_1_opt_vdz_gga.in_10244.0 /scr/c295_lal/137073/qchem10244/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s sys_1_opt_vdz_gga.in_10244.0 /scr/c295_lal/137073/qchem10244/
+Check license passed
+
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.1, Q-Chem, Inc., Pleasanton, CA (2018)
+
+ Yihan Shao,  Zhengting Gan,  E. Epifanovsky,  A. T. B. Gilbert,  M. Wormit,  
+ J. Kussmann,  A. W. Lange,  A. Behn,  Jia Deng,  Xintian Feng,  D. Ghosh,  
+ M. Goldey,  P. R. Horn,  L. D. Jacobson,  I. Kaliman,  T. Kus,  A. Landau,  
+ Jie Liu,  E. I. Proynov,  R. M. Richard,  R. P. Steele,  E. J. Sundstrom,  
+ H. L. Woodcock III,  P. M. Zimmerman,  D. Zuev,  B. Albrecht,  E. Alguire,  
+ S. A. Baeppler,  D. Barton,  Z. Benda,  Y. A. Bernard,  E. J. Berquist,  
+ K. B. Bravaya,  H. Burton,  D. Casanova,  Chun-Min Chang,  Yunqing Chen,  
+ A. Chien,  K. D. Closser,  M. P. Coons,  S. Coriani,  S. Dasgupta,  
+ A. L. Dempwolff,  M. Diedenhofen,  Hainam Do,  R. G. Edgar,  Po-Tung Fang,  
+ S. Faraji,  S. Fatehi,  Qingguo Feng,  K. D. Fenk,  J. Fosso-Tande,  
+ Qinghui Ge,  A. Ghysels,  G. Gidofalvi,  J. Gomes,  J. Gonthier,  A. Gunina,  
+ D. Hait,  M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  
+ J. E. Herr,  E. G. Hohenstein,  Z. C. Holden,  Kerwin Hui,  B. C. Huynh,  
+ T.-C. Jagau,  Hyunjun Ji,  B. Kaduk,  K. Khistyaev,  Jaehoon Kim,  
+ P. Klunzinger,  K. Koh,  D. Kosenkov,  L. Koulias,  T. Kowalczyk,  
+ C. M. Krauter,  A. Kunitsa,  Ka Un Lao,  A. Laurent,  K. V. Lawler,  
+ Joonho Lee,  D. Lefrancois,  S. Lehtola,  D. S. Levine,  Yi-Pei Li,  
+ You-Sheng Lin,  Fenglai Liu,  E. Livshits,  A. Luenser,  P. Manohar,  
+ E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  Yuezhi Mao,  N. Mardirossian,  
+ A. V. Marenich,  T. Markovich,  L. A. Martinez-Martinez,  S. A. Maurer,  
+ N. J. Mayhall,  S. C. McKenzie,  J.-M. Mewes,  A. F. Morrison,  
+ J. W. Mullinax,  K. Nanda,  T. S. Nguyen-Beck,  R. Olivares-Amaya,  
+ J. A. Parkhill,  T. M. Perrine,  F. Plasser,  P. Pokhilko,  S. Prager,  
+ A. Prociuk,  E. Ramos,  D. R. Rehn,  F. Rob,  M. Schneider,  N. Sergueev,  
+ S. M. Sharada,  S. Sharma,  D. W. Small,  T. Stauch,  T. Stein,  
+ Yu-Chuan Su,  A. J. W. Thom,  A. Tkatchenko,  T. Tsuchimochi,  N. M. Tubman,  
+ L. Vogt,  M. L. Vidal,  O. Vydrov,  M. A. Watson,  J. Wenzel,  
+ M. de Wergifosse,  T. A. Wesolowski,  A. White,  J. Witte,  A. Yamada,  
+ Jun Yang,  K. Yao,  S. Yeganeh,  S. R. Yost,  Zhi-Qiang You,  A. Zech,  
+ Igor Ying Zhang,  Xing Zhang,  Yan Zhao,  Ying Zhu,  B. R. Brooks,  
+ G. K. L. Chan,  C. J. Cramer,  M. S. Gordon,  W. J. Hehre,  A. Klamt,  
+ M. W. Schmidt,  C. D. Sherrill,  D. G. Truhlar,  A. Aspuru-Guzik,  R. Baer,  
+ A. T. Bell,  N. A. Besley,  Jeng-Da Chai,  A. E. DePrince, III,  
+ R. A. DiStasio Jr.,  A. Dreuw,  B. D. Dunietz,  T. R. Furlani,  
+ Chao-Ping Hsu,  Yousung Jung,  Jing Kong,  D. S. Lambrecht,  WanZhen Liang,  
+ C. Ochsenfeld,  V. A. Rassolov,  L. V. Slipchenko,  J. E. Subotnik,  
+ T. Van Voorhis,  J. M. Herbert,  A. I. Krylov,  P. M. W. Gill,  M. Head-Gordon
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  J. Baker,  G. J. O. Beran,  K. Brandhorst,  
+ S. T. Brown,  E. F. C. Byrd,  A. K. Chakraborty,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  L. Fusti-Molnar,  W. A. Goddard III,  
+ A. Golubeva-Zadorozhnaya,  S. R. Gwaltney,  G. Hawkins,  A. Heyden,  
+ S. Hirata,  G. Kedziora,  F. J. Keil,  C. Kelley,  Jihan Kim,  R. A. King,  
+ R. Z. Khaliullin,  P. P. Korambath,  W. Kurlancheek,  A. M. Lee,  M. S. Lee,  
+ S. V. Levchenko,  Ching Yeh Lin,  D. Liotard,  R. C. Lochan,  I. Lotan,  
+ P. E. Maslen,  N. Nair,  D. P. O'Neill,  D. Neuhauser,  E. Neuscamman,  
+ C. M. Oana,  R. Olson,  B. Peters,  R. Peverati,  P. A. Pieniazek,  
+ Y. M. Rhee,  J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  
+ H. F. Schaefer III,  N. E. Schultz,  N. Shenvi,  A. C. Simmonett,  A. Sodt,  
+ D. Stuck,  K. S. Thanthiriwatte,  V. Vanovschi,  Tao Wang,  A. Warshel,  
+ C. F. Williams,  Q. Wu,  X. Xu,  W. Zhang
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 5.1.1 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Wed Oct 31 15:27:51 2018  
+
+Host: cub-0-18.local
+0
+
+     Scratch files written to /scr/c295_lal/137073/qchem10244//
+ Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
+Processing $rem in /usr/software/qchem_511/config/preferences.
+ MEM_TOTAL  2000 
+Input Ideriv = 2
+Curr. Ideriv = -1
+Max.  Ideriv = 2
+
+Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+2 5
+O         0.8095210359   -0.0197085703    0.0000000000
+O         2.0449184207    0.0098867636    0.0000000000
+Fe       -1.1585186781   -0.0568319480    0.0000000000
+N         -1.00586       12.49034        5.96233
+C         -1.09101       11.63863        4.92061
+N         -2.35758       11.47719        4.49788
+C         -3.10966       12.25082        5.29529
+C         -2.27597       12.87503        6.19604
+H         -4.18471       12.35236        5.22619
+H         -2.57367       13.56458        6.97439
+H         -0.23802       11.14270        4.47677
+H         -2.68725       10.87430        3.71210
+H         -6.69688       10.49875        5.73540
+C         -6.21811        9.67053        6.24071
+H         -4.43511        9.41418        5.08715
+N         -5.04434        9.12737        5.88410
+C         -6.68608        8.99216        7.34379
+C         -4.81620        8.13753        6.76571
+H         -7.60843        9.18779        7.87375
+N         -5.80521        8.02765        7.67553
+H         -3.94067        7.50246        6.74844
+H         -4.45295       11.84757        8.00825
+C         -4.17766       11.10860        8.74811
+H         -2.26722       10.44998        8.04178
+N         -3.03943       10.39795        8.74217
+C         -4.91561       10.72725        9.84571
+C         -3.10019        9.60335        9.82570
+H         -5.88483       11.11237       10.13223
+N         -4.23936        9.78030       10.52481
+H         -2.32626        8.90233       10.10609
+H         -1.36181        7.50756        7.52958
+C         -0.43836        7.89911        7.93473
+H          0.17865        9.26687        6.40863
+N          0.34070        8.81100        7.33317
+C          0.14393        7.56460        9.13674
+C          1.37475        9.01644        8.16827
+H         -0.23785        6.85601        9.85936
+N          1.28451        8.26668        9.28535
+H          2.18615        9.70351        7.96782
+$end
+
+$rem
+BASIS = VDZ
+METHOD  = BLYP
+JOBTYPE = OPT
+MAX_SCF_CYCLES = 500
+SCF_ALGORITHM = DIIS_GDM
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      O      10.0441788926     0.6215861668    -0.1485910316
+    2      O      10.3123175354     1.8150426335    -0.3242210754
+    3      Fe      9.6092030209    -1.2785429520     0.1250214392
+    4      N      -3.5986025451     1.7000795842    -2.9871944130
+    5      C      -2.3505701027     1.2700302393    -3.2616276262
+    6      N      -2.2782437184    -0.0712863088    -3.3294649571
+    7      C      -3.5211597293    -0.5161510373    -3.0902044830
+    8      C      -4.3335603931     0.5756846432    -2.8806150967
+    9      H      -3.8137659368    -1.5576741430    -3.0694942949
+   10      H      -5.3927216788     0.5547188665    -2.6622781504
+   11      H      -1.5053960453     1.9289884255    -3.4099090217
+   12      H      -1.4302802684    -0.6470800401    -3.5270211159
+   13      H      -3.2549129195    -4.0562824734    -1.2118606708
+   14      C      -2.7887030242    -3.5620664328    -0.3698950444
+   15      H      -1.4999542975    -2.1544846147    -1.3359929385
+   16      N      -1.8816079520    -2.5778923282    -0.4621411961
+   17      C      -3.0089624357    -3.8173548885     0.9651258769
+   18      C      -1.5664385162    -2.2507868388     0.8038514985
+   19      H      -3.6861054265    -4.5549371910     1.3741588073
+   20      N      -2.2410581131    -2.9931144772     1.7048647635
+   21      H      -0.8545761655    -1.4810032365     1.0700283906
+   22      H      -5.0952549956    -1.1908677982    -0.5615344900
+   23      C      -4.8825536176    -0.8255525390     0.4337327855
+   24      H      -3.5090738954     0.7701743661     0.0468575292
+   25      N      -4.0563635013     0.1918235045     0.7217989528
+   26      C      -5.3950070644    -1.3097815548     1.6159499865
+   27      C      -4.0786215477     0.3113506602     2.0613272418
+   28      H      -6.0899706690    -2.1313261935     1.7249845129
+   29      N      -4.8903179981    -0.5957931974     2.6409937645
+   30      H      -3.5117382445     1.0488387446     2.6124804722
+   31      H      -0.7032589416     1.1951670324     1.3456012464
+   32      C      -1.0258087061     2.2267954782     1.3017580409
+   33      H      -1.0631342193     2.5976522181    -0.8057338457
+   34      N      -1.2050066251     2.9300237606     0.1731702605
+   35      C      -1.3240775558     3.0451883368     2.3680860611
+   36      C      -1.6054232456     4.1530034307     0.5641232789
+   37      H      -1.2799831062     2.7765713859     3.4149556968
+   38      N      -1.6890541937     4.2572422716     1.9058725738
+   39      H      -1.8340249995     4.9608943515    -0.1182760510
+ ----------------------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =  1830.6048483451 hartrees
+ There are       94 alpha and       90 beta electrons
+ Requested basis set is VDZ
+ There are 151 shells and 251 basis functions
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+ A cutoff of  1.0D-12 yielded   7442 shell pairs
+ There are     19824 function pairs (     19914 Cartesian)
+ 
+ -------------------------------------------------------
+ OpenMP Integral Computing Module                       
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ Integral Job Info:
+ Integral job number is                      11
+ Integral operator is                         1
+ short-range coefficients                     0
+ long-range coefficients              100000000
+ Omega coefficients                           0
+ if combine SR and LR in K                    0
+ Integral screening is                        0
+ Integral computing path is                   2
+ max size of driver memory is            800000
+ size of driver memory is                593474
+ size of scratch memory is             29634545
+ max col of scratch BK array               1296
+ max len of scratch array in speh3          155
+ max len of scratch index in speh4           18
+ max int batch size is                      520
+ min int batch size is                       52
+ fixed nKL is                                45
+ max L of basis functions is                  2
+ order of int derivative is                   0
+ number of shells is                        151
+ number of basis is                         253
+ number of cartesian basis is               253
+ number of contracted shell pairs          7442
+ number of primitive shell pairs          20799
+ maxK2 (contraction) of shell pair           36
+ max number of K2 of shell pair               1
+ max number of CS2 of shell pair           1755
+ max number of PS2 of shell pair           4735
+ mem total for path MDJ                  586130
+ -------------------------------------------------------
+ Smallest overlap matrix eigenvalue = 1.51E-03
+
+ Scale SEOQF with 1.000000e-02/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =     0.0000000217 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 186.000000 electrons
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+ Exchange:  B88      Correlation:  LYP
+ Using SG-1 standard quadrature grid
+ using 12 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A unrestricted SCF calculation will be
+ performed using DIIS, GDM
+ SCF converges when RMS gradient is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1   -2322.0827282624      3.25e-02  
+    2   -2315.6852844874      4.59e-03  Done DIIS. Switching to GDM
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -2315.6852844874      9.73e-01   Descent step
+    2   -2315.9592115672      1.07e+00   Descent step
+    3   -2316.1826321285      5.85e-01   Descent step
+    4   -2316.1690476544      8.87e-01  Line search: overstep
+    5   -2316.3097820716      3.90e-01   Descent step
+    6   -2316.1480369208      2.10e+00  Line search: overstep
+    7   -2316.3633341698      1.57e-01   Descent step
+    8   -2316.2722544591      6.32e-01  Line search: overstep
+    9   -2316.3852516129      3.84e-01   Normal BFGS step
+   10   -2316.4116093599      1.36e-01   Normal BFGS step
+   11   -2316.4024920958      2.34e-01  Line search: overstep
+   12   -2316.4213314202      1.58e-01   Normal BFGS step
+   13   -2316.4244843099      8.36e-02   Normal BFGS step
+   14   -2316.4275933963      4.26e-02   Normal BFGS step
+   15   -2316.4274205511      5.12e-02  Line search: overstep
+   16   -2316.4281099949      4.61e-02   Normal BFGS step
+   17   -2316.4282881924      1.12e-02   Normal BFGS step
+   18   -2316.4284085258      4.18e-03   Normal BFGS step
+   19   -2316.4284209380      9.33e-03   Normal BFGS step
+   20   -2316.4284425491      2.75e-03   Normal BFGS step
+   21   -2316.4284535993      9.87e-04   Normal BFGS step
+   22   -2316.4284606449      1.57e-03   Normal BFGS step
+   23   -2316.4285416326      6.85e-03  Line search: understep
+   24   -2316.4311236520      7.56e-02   Normal BFGS step
+   25   -2316.4334083505      4.51e-02   Dog-leg BFGS step
+   26   -2316.2947610699      7.34e-01  Line search: overstep
+   27   -2316.4355820948      3.04e-02   Dog-leg BFGS step
+   28   -2316.3873452411      3.18e-01  Line search: overstep
+   29   -2316.4416051334      4.74e-02   Dog-leg BFGS step
+   30   -2316.3813068722      4.27e-01  Line search: overstep
+   31   -2316.4448089721      7.83e-02   Dog-leg BFGS step
+   32   -2316.4629439423      4.99e-01   Normal BFGS step
+   33   -2316.5215175363      3.69e-01   Descent step
+   34   -2316.2816998059      2.04e+00  Line search: overstep
+   35   -2316.5457494299      1.79e-01   Descent step
+   36   -2316.3036698455      9.99e-01  Line search: overstep
+   37   -2316.5636823744      2.64e-01   Descent step
+   38   -2316.3143819369      1.85e+00  Line search: overstep
+   39   -2316.5766727644      1.68e-01   Descent step
+   40   -2316.2138345999      1.04e+00  Line search: overstep
+   41   -2316.5881384962      1.68e-01   Descent step
+   42   -2316.4288664382      9.46e-01  Line search: overstep
+   43   -2316.5982381781      2.08e-01   Descent step
+   44   -2316.0853311952      1.29e+00  Line search: overstep
+   45   -2316.6083560643      9.26e-02   Dog-leg BFGS step
+   46   -2316.6116529763      3.84e-01   Normal BFGS step
+   47   -2316.6311333664      1.61e-01   Descent step
+   48   -2316.3260952739      8.31e-01  Line search: overstep
+   49   -2316.6420815759      1.37e-01   Dog-leg BFGS step
+   50   -2316.5347840341      4.02e-01  Line search: overstep
+   51   -2316.6522192199      9.86e-02   Normal BFGS step
+   52   -2316.6582751114      1.11e-01   Normal BFGS step
+   53   -2316.6553778063      1.08e-01  Line search: overstep
+   54   -2316.6649286457      4.28e-02   Normal BFGS step
+   55   -2316.6692834009      6.87e-02   Normal BFGS step
+   56   -2316.6711026145      1.61e-01   Normal BFGS step
+   57   -2316.6643650753      3.82e-01  Line search: overstep
+   58   -2316.6761629315      4.24e-02   Normal BFGS step
+   59   -2316.6705408025      6.56e-02  Line search: overstep
+   60   -2316.6796095679      1.98e-02   Normal BFGS step
+   61   -2316.6797784508      2.63e-02   Normal BFGS step
+   62   -2316.6804115014      1.50e-02   Normal BFGS step
+   63   -2316.6805699409      1.35e-02   Normal BFGS step
+   64   -2316.6809656971      7.60e-03   Normal BFGS step
+   65   -2316.6810689700      1.23e-02   Normal BFGS step
+   66   -2316.6812705371      4.56e-03   Normal BFGS step
+   67   -2316.6813465591      9.37e-03   Normal BFGS step
+   68   -2316.6814182258      5.01e-03   Normal BFGS step
+   69   -2316.6814716481      4.16e-03   Normal BFGS step
+   70   -2316.6815177420      2.31e-03   Normal BFGS step
+   71   -2316.6815453084      6.27e-03   Normal BFGS step
+   72   -2316.6815853124      4.94e-03   Normal BFGS step
+   73   -2316.6816053642      4.61e-03   Normal BFGS step
+   74   -2316.6816331713      3.18e-03   Normal BFGS step
+   75   -2316.6816333469      3.37e-03   Normal BFGS step
+   76   -2316.6816548947      2.03e-03   Normal BFGS step
+   77   -2316.6816590820      3.45e-03   Normal BFGS step
+   78   -2316.6816359601      1.49e-02  Line search: overstep
+   79   -2316.6816632233      1.59e-03   Normal BFGS step
+   80   -2316.6816524793      4.85e-03  Line search: overstep
+   81   -2316.6816676657      1.09e-03   Normal BFGS step
+   82   -2316.6816714217      1.80e-03   Normal BFGS step
+   83   -2316.6816766428      1.09e-03   Normal BFGS step
+   84   -2316.6816823143      1.43e-03   Normal BFGS step
+   85   -2316.6816869102      1.21e-03   Normal BFGS step
+   86   -2316.6816915431      1.55e-03   Normal BFGS step
+   87   -2316.6816972914      8.37e-04   Normal BFGS step
+   88   -2316.6817062856      7.75e-04   Normal BFGS step
+   89   -2316.6817121120      2.39e-03   Normal BFGS step
+   90   -2316.6817187212      1.47e-03   Normal BFGS step
+   91   -2316.6817218623      2.55e-03   Normal BFGS step
+   92   -2316.6817308027      2.09e-03   Normal BFGS step
+   93   -2316.6817303484      3.96e-03  Line search: overstep
+   94   -2316.6817362095      7.92e-04   Normal BFGS step
+   95   -2316.6817397505      1.06e-03   Normal BFGS step
+   96   -2316.6817449364      4.54e-03   Normal BFGS step
+   97   -2316.6817496088      1.19e-03   Normal BFGS step
+   98   -2316.6817527351      8.51e-04   Normal BFGS step
+   99   -2316.6817568531      1.15e-03   Normal BFGS step
+  100   -2316.6817565782      4.83e-03  Line search: overstep
+  101   -2316.6817592708      1.74e-03   Normal BFGS step
+  102   -2316.6817495107      4.16e-03  Line search: overstep
+  103   -2316.6817606146      5.10e-04   Normal BFGS step
+  104   -2316.6817624758      1.06e-03   Normal BFGS step
+  105   -2316.6817615880      3.03e-03  Line search: overstep
+  106   -2316.6817644656      7.90e-04   Normal BFGS step
+  107   -2316.6817675804      1.24e-03   Normal BFGS step
+  108   -2316.6817709220      1.53e-03   Normal BFGS step
+  109   -2316.6817744455      6.90e-04   Normal BFGS step
+  110   -2316.6817798607      9.00e-04   Normal BFGS step
+  111   -2316.6817818569      6.82e-03   Normal BFGS step
+  112   -2316.6817892992      1.10e-03   Normal BFGS step
+  113   -2316.6817960590      1.38e-03   Normal BFGS step
+  114   -2316.6818039142      3.72e-03   Normal BFGS step
+  115   -2316.6818096345      8.43e-03   Normal BFGS step
+  116   -2316.6818217127      1.25e-03   Normal BFGS step
+  117   -2316.6818330331      1.95e-03   Normal BFGS step
+  118   -2316.6818385655      5.40e-03   Normal BFGS step
+  119   -2316.6818146162      3.28e-03  Line search: overstep
+  120   -2316.6818477037      3.16e-03   Normal BFGS step
+  121   -2316.6818575739      3.28e-03   Normal BFGS step
+  122   -2316.6818742032      4.61e-03   Normal BFGS step
+  123   -2316.6818772751      6.73e-03   Normal BFGS step
+  124   -2316.6818609418      1.50e-02  Line search: overstep
+  125   -2316.6818890125      2.56e-03   Normal BFGS step
+  126   -2316.6818900688      2.68e-03   Normal BFGS step
+  127   -2316.6819105137      5.37e-03   Normal BFGS step
+  128   -2316.6819122670      4.21e-03   Normal BFGS step
+  129   -2316.6819219909      2.35e-03   Normal BFGS step
+  130   -2316.6818950810      3.03e-03  Line search: overstep
+  131   -2316.6819324614      1.42e-03   Normal BFGS step
+  132   -2316.6819419470      4.10e-03   Normal BFGS step
+  133   -2316.6819539964      3.94e-03   Normal BFGS step
+  134   -2316.6819615292      4.49e-03   Normal BFGS step
+  135   -2316.6819627415      7.16e-03   Normal BFGS step
+  136   -2316.6819745917      4.60e-03   Normal BFGS step
+  137   -2316.6819813842      9.48e-04   Normal BFGS step
+  138   -2316.6819827942      3.51e-03   Normal BFGS step
+  139   -2316.6819839698      2.58e-03   Normal BFGS step
+  140   -2316.6819881633      1.06e-03   Normal BFGS step
+  141   -2316.6819895731      2.20e-03   Normal BFGS step
+  142   -2316.6819927334      9.38e-04   Normal BFGS step
+  143   -2316.6819929190      8.00e-04   Normal BFGS step
+  144   -2316.6819939213      1.32e-03   Normal BFGS step
+  145   -2316.6819893611      1.98e-03  Line search: overstep
+  146   -2316.6819947661      3.60e-04   Normal BFGS step
+  147   -2316.6819953357      8.56e-04   Normal BFGS step
+  148   -2316.6819960273      5.07e-04   Normal BFGS step
+  149   -2316.6819962403      4.32e-04   Normal BFGS step
+  150   -2316.6819966120      8.33e-04   Normal BFGS step
+  151   -2316.6819969414      4.41e-04   Normal BFGS step
+  152   -2316.6819970853      2.12e-04   Normal BFGS step
+  153   -2316.6819973227      1.41e-04   Normal BFGS step
+  154   -2316.6819974899      3.34e-04   Normal BFGS step
+  155   -2316.6819976354      7.22e-04   Normal BFGS step
+  156   -2316.6819975033      4.91e-04  Line search: overstep
+  157   -2316.6819979003      1.81e-04   Normal BFGS step
+  158   -2316.6819981072      4.00e-04   Normal BFGS step
+  159   -2316.6819983746      4.86e-04   Normal BFGS step
+  160   -2316.6819985517      2.81e-04   Normal BFGS step
+  161   -2316.6819989385      1.66e-04   Normal BFGS step
+  162   -2316.6819993400      2.21e-04   Normal BFGS step
+  163   -2316.6819998335      3.36e-04   Normal BFGS step
+  164   -2316.6820003346      3.02e-04   Normal BFGS step
+  165   -2316.6820007095      4.81e-04   Normal BFGS step
+  166   -2316.6820010441      8.83e-04   Normal BFGS step
+  167   -2316.6820016981      4.24e-04   Normal BFGS step
+  168   -2316.6820014894      4.13e-04  Line search: overstep
+  169   -2316.6820021609      1.89e-04   Normal BFGS step
+  170   -2316.6820022880      1.41e-03   Normal BFGS step
+  171   -2316.6820025972      8.01e-04   Normal BFGS step
+  172   -2316.6820026728      4.64e-04   Normal BFGS step
+  173   -2316.6820032525      1.96e-04   Normal BFGS step
+  174   -2316.6820031851      7.67e-04  Line search: overstep
+  175   -2316.6820033987      3.79e-04   Normal BFGS step
+  176   -2316.6820034311      4.74e-04   Normal BFGS step
+  177   -2316.6820035913      1.87e-04   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.57e-09
+  178   -2316.6820035843      2.47e-04   Normal BFGS step
+  179   -2316.6820037505      5.22e-04   Normal BFGS step
+  180   -2316.6820037147      3.35e-04  Line search: overstep
+  181   -2316.6820038130      1.75e-04   Normal BFGS step
+  182   -2316.6820038567      1.08e-04   Normal BFGS step
+  183   -2316.6820039774      2.13e-04   Normal BFGS step
+  184   -2316.6820041348      1.58e-04   Normal BFGS step
+  185   -2316.6820043157      1.23e-04   Normal BFGS step
+  186   -2316.6820044981      1.21e-04   Normal BFGS step
+  187   -2316.6820047293      1.28e-04   Normal BFGS step
+  188   -2316.6820048484      2.55e-04   Normal BFGS step
+  189   -2316.6820048685      7.95e-04   Normal BFGS step
+  190   -2316.6820050020      2.54e-04   Normal BFGS step
+  191   -2316.6820049597      5.50e-04  Line search: overstep
+  192   -2316.6820051164      1.16e-04   Normal BFGS step
+  193   -2316.6820048997      7.34e-04  Line search: overstep
+  194   -2316.6820051766      1.56e-04   Normal BFGS step
+  195   -2316.6820051855      2.97e-04   Normal BFGS step
+  196   -2316.6820052688      1.52e-04   Normal BFGS step
+  197   -2316.6820053044      9.35e-05   Normal BFGS step
+  198   -2316.6820053320      2.88e-04   Normal BFGS step
+  199   -2316.6820053229      2.82e-04  Line search: overstep
+  200   -2316.6820053613      6.51e-05   Normal BFGS step
+  201   -2316.6820053605      8.92e-05   Normal BFGS step
+  202   -2316.6820053902      1.41e-04   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.57e-09
+  203   -2316.6820053828      2.22e-04   Normal BFGS step
+  204   -2316.6820054065      3.65e-05   Normal BFGS step
+  205   -2316.6820054076      8.66e-05   Normal BFGS step
+  206   -2316.6820054251      4.84e-05   Normal BFGS step
+  207   -2316.6820054283      4.41e-05   Normal BFGS step
+  208   -2316.6820054398      4.20e-05   Normal BFGS step
+  209   -2316.6820054438      3.52e-05   Normal BFGS step
+  210   -2316.6820054492      3.17e-05   Normal BFGS step
+  211   -2316.6820054521      2.80e-05   Normal BFGS step
+  212   -2316.6820054512      1.74e-04   Normal BFGS step
+  213   -2316.6820054547      7.23e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.57e-09
+  214   -2316.6820054523      5.18e-05   Normal BFGS step
+  215   -2316.6820054590      2.18e-05   Normal BFGS step
+  216   -2316.6820054574      4.81e-05   Normal BFGS step
+  217   -2316.6820054614      7.67e-06   Normal BFGS step
+  218   -2316.6820054615      1.40e-05   Normal BFGS step
+  219   -2316.6820054624      1.74e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.57e-09
+  220   -2316.6820054612      6.67e-05   Normal BFGS step
+  221   -2316.6820054627      2.03e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.57e-09
+  222   -2316.6820054606      3.67e-05   Normal BFGS step
+  223   -2316.6820054629      1.49e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.57e-09
+  224   -2316.6820054618      2.53e-05   Normal BFGS step
+  225   -2316.6820054632      3.87e-06   Normal BFGS step
+  226   -2316.6820054632      5.30e-06   Normal BFGS step
+  227   -2316.6820054633      2.35e-06   Normal BFGS step
+  228   -2316.6820054633      1.85e-06   Normal BFGS step
+  229   -2316.6820054633      2.03e-06   Normal BFGS step
+  230   -2316.6820054633      1.85e-06   Normal BFGS step
+  231   -2316.6820054633      6.08e-06   Normal BFGS step
+  232   -2316.6820054633      2.16e-05   Normal BFGS step
+  233   -2316.6820054634      5.82e-07   Normal BFGS step
+  234   -2316.6820054634      9.48e-07   Normal BFGS step
+  235   -2316.6820054634      4.68e-07   Normal BFGS step
+  236   -2316.6820054634      7.97e-07   Normal BFGS step
+  237   -2316.6820054634      4.88e-07   Normal BFGS step
+  238   -2316.6820054634      1.15e-06   Normal BFGS step
+  239   -2316.6820054634      1.38e-06   Normal BFGS step
+  240   -2316.6820054634      3.83e-06   Normal BFGS step
+  241   -2316.6820054634      1.97e-06   Normal BFGS step
+  242   -2316.6820054634      2.13e-06   Normal BFGS step
+  243   -2316.6820054634      2.80e-07   Normal BFGS step
+  244   -2316.6820054634      7.57e-07   Normal BFGS step
+  245   -2316.6820054634      2.71e-07   Normal BFGS step
+  246   -2316.6820054634      2.32e-07   Normal BFGS step
+  247   -2316.6820054634      2.53e-07   Normal BFGS step
+  248   -2316.6820054634      2.63e-07   Normal BFGS step
+  249   -2316.6820054634      2.37e-07   Normal BFGS step
+  250   -2316.6820054634      3.57e-07   Normal BFGS step
+  251   -2316.6820054634      1.40e-07   Normal BFGS step
+  252   -2316.6820054634      3.18e-07   Normal BFGS step
+  253   -2316.6820054634      4.93e-07   Normal BFGS step
+  254   -2316.6820054634      3.64e-06   Normal BFGS step
+  255   -2316.6820054634      4.77e-07   Normal BFGS step
+  256   -2316.6820054634      4.31e-07   Normal BFGS step
+  257   -2316.6820054634      1.96e-07   Normal BFGS step
+  258   -2316.6820054634      5.16e-07   Normal BFGS step
+  259   -2316.6820054634      4.16e-07   Normal BFGS step
+  260   -2316.6820054634      1.25e-06   Normal BFGS step
+  261   -2316.6820054634      1.67e-07   Normal BFGS step
+  262   -2316.6820054634      4.73e-07   Normal BFGS step
+  263   -2316.6820054634      1.24e-07   Normal BFGS step
+  264   -2316.6820054634      1.43e-07   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.16e-09
+  265   -2316.6820054634      1.61e-07   Normal BFGS step
+  266   -2316.6820054634      2.50e-07   Normal BFGS step
+  267   -2316.6820054634      1.06e-07   Normal BFGS step
+  268   -2316.6820054634      9.05e-08   Normal BFGS step
+  269   -2316.6820054634      1.27e-07   Normal BFGS step
+  270   -2316.6820054634      1.23e-07   Normal BFGS step
+  271   -2316.6820054634      1.42e-07   Normal BFGS step
+  272   -2316.6820054634      1.42e-07   Normal BFGS step
+  273   -2316.6820054634      8.81e-07   Normal BFGS step
+  274   -2316.6820054634      7.42e-07   Normal BFGS step
+  275   -2316.6820054634      2.10e-07   Normal BFGS step
+  276   -2316.6820054634      2.08e-07   Normal BFGS step
+  277   -2316.6820054634      2.37e-07   Normal BFGS step
+  278   -2316.6820054634      6.66e-08   Normal BFGS step
+  279   -2316.6820054634      5.40e-07   Normal BFGS step
+  280   -2316.6820054634      1.04e-06   Normal BFGS step
+  281   -2316.6820054634      6.19e-07   Normal BFGS step
+  282   -2316.6820054634      3.27e-07   Normal BFGS step
+  283   -2316.6820054634      1.19e-07   Normal BFGS step
+  284   -2316.6820054634      1.75e-07   Normal BFGS step
+  285   -2316.6820054634      1.07e-07   Normal BFGS step
+  286   -2316.6820054634      1.33e-07   Normal BFGS step
+  287   -2316.6820054634      9.56e-08   Normal BFGS step
+  288   -2316.6820054634      1.77e-07   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.16e-09
+  289   -2316.6820054634      1.88e-07   Normal BFGS step
+  290   -2316.6820054634      1.34e-07   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.16e-09
+  291   -2316.6820054634      4.01e-07   Normal BFGS step
+  292   -2316.6820054634      1.13e-06   Normal BFGS step
+  293   -2316.6820054634      8.07e-07   Normal BFGS step
+  294   -2316.6820054634      3.23e-07   Normal BFGS step
+  295   -2316.6820054634      1.05e-07   Normal BFGS step
+  296   -2316.6820054634      1.46e-07   Normal BFGS step
+  297   -2316.6820054634      6.04e-08   Normal BFGS step
+  298   -2316.6820054634      1.90e-07   Normal BFGS step
+  299   -2316.6820054634      1.84e-07   Normal BFGS step
+  300   -2316.6820054634      3.38e-07   Normal BFGS step
+  301   -2316.6820054634      3.56e-08   Normal BFGS step
+  302   -2316.6820054634      7.61e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.72e-09
+  303   -2316.6820054634      2.56e-08   Normal BFGS step
+  304   -2316.6820054634      2.68e-08   Normal BFGS step
+  305   -2316.6820054634      1.81e-08   Normal BFGS step
+  306   -2316.6820054634      1.91e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.72e-09
+  307   -2316.6820054634      1.56e-08   Normal BFGS step
+  308   -2316.6820054634      2.00e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.72e-09
+  309   -2316.6820054634      1.21e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.72e-09
+  310   -2316.6820054634      3.50e-08   Normal BFGS step
+  311   -2316.6820054634      1.34e-07   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.72e-09
+  312   -2316.6820054634      1.30e-07   Normal BFGS step
+  313   -2316.6820054634      1.24e-08   Normal BFGS step
+  314   -2316.6820054634      2.48e-08   Normal BFGS step
+  315   -2316.6820054634      8.44e-09  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 7080.73s  wall 598.00s 
+<S^2> =          7.033856780
+ SCF   energy in the final basis set =    -2316.6820054634
+ Total energy in the final basis set =    -2316.6820054634
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+******* -29.797 -25.754 -25.752 -25.747 -19.129 -19.108 -14.291
+-14.289 -14.283 -14.282 -14.204 -14.201 -14.199 -14.195 -10.186
+-10.182 -10.170 -10.168 -10.165 -10.160 -10.153 -10.145 -10.140
+-10.134 -10.128 -10.123  -3.570  -2.395  -2.395  -2.379  -1.363
+ -1.156  -1.153  -1.145  -1.143  -1.003  -1.002  -0.996  -0.994
+ -0.918  -0.878  -0.875  -0.866  -0.863  -0.767  -0.763  -0.758
+ -0.757  -0.740  -0.738  -0.731  -0.729  -0.711  -0.708  -0.700
+ -0.700  -0.683  -0.661  -0.637  -0.610  -0.604  -0.602  -0.596
+ -0.595  -0.593  -0.592  -0.591  -0.590  -0.588  -0.585  -0.580
+ -0.564  -0.562  -0.555  -0.554  -0.504  -0.501  -0.500  -0.495
+ -0.467  -0.462  -0.452  -0.452  -0.450  -0.418  -0.417  -0.405
+ -0.403  -0.402  -0.399  -0.396  -0.395  -0.394
+ -- Virtual --
+ -0.389  -0.385  -0.219  -0.215  -0.209  -0.209  -0.201  -0.182
+ -0.173  -0.164  -0.163  -0.158  -0.153  -0.149  -0.141  -0.135
+ -0.125  -0.095  -0.090  -0.084  -0.072  -0.068  -0.061  -0.059
+ -0.054  -0.045  -0.043  -0.028  -0.016  -0.010   0.000   0.004
+  0.008   0.010   0.014   0.017   0.025   0.045   0.057   0.060
+  0.086   0.092   0.111   0.113   0.119   0.134   0.139   0.148
+  0.163   0.178   0.191   0.194   0.206   0.210   0.211   0.214
+  0.227   0.228   0.252   0.258   0.263   0.275   0.277   0.287
+  0.294   0.305   0.312   0.318   0.328   0.330   0.332   0.337
+  0.341   0.343   0.356   0.365   0.386   0.399   0.406   0.418
+  0.420   0.430   0.434   0.442   0.455   0.460   0.460   0.469
+  0.475   0.477   0.480   0.490   0.497   0.502   0.508   0.517
+  0.520   0.520   0.523   0.528   0.531   0.541   0.551   0.555
+  0.566   0.576   0.581   0.581   0.596   0.605   0.614   0.624
+  0.624   0.627   0.632   0.636   0.636   0.637   0.643   0.645
+  0.651   0.654   0.661   0.672   0.675   0.688   0.702   0.726
+  0.726   0.744   0.763   0.769   0.782   0.805   0.807   0.817
+  0.818   0.833   0.859   0.885   0.905   0.920   0.925   0.933
+  0.947   1.011   1.021   1.024   1.047   1.051   1.063   1.081
+  1.124   1.234   1.257   1.269   1.282
+ 
+ Beta MOs
+ -- Occupied --
+******* -29.745 -25.713 -25.712 -25.711 -19.128 -19.113 -14.291
+-14.289 -14.283 -14.282 -14.203 -14.199 -14.199 -14.194 -10.183
+-10.181 -10.169 -10.168 -10.163 -10.158 -10.152 -10.145 -10.138
+-10.133 -10.128 -10.123  -3.446  -2.274  -2.271  -2.262  -1.367
+ -1.153  -1.151  -1.143  -1.142  -1.002  -1.001  -0.994  -0.994
+ -0.923  -0.872  -0.870  -0.863  -0.862  -0.766  -0.762  -0.758
+ -0.756  -0.737  -0.736  -0.729  -0.729  -0.709  -0.706  -0.699
+ -0.698  -0.686  -0.674  -0.634  -0.605  -0.602  -0.600  -0.594
+ -0.592  -0.591  -0.591  -0.588  -0.587  -0.587  -0.583  -0.580
+ -0.562  -0.561  -0.555  -0.553  -0.460  -0.451  -0.450  -0.449
+ -0.448  -0.425  -0.410  -0.406  -0.398  -0.395  -0.394  -0.393
+ -0.392  -0.391
+ -- Virtual --
+ -0.391  -0.391  -0.374  -0.370  -0.366  -0.352  -0.219  -0.208
+ -0.207  -0.200  -0.196  -0.181  -0.167  -0.161  -0.158  -0.154
+ -0.152  -0.147  -0.135  -0.134  -0.125  -0.093  -0.089  -0.083
+ -0.072  -0.068  -0.061  -0.058  -0.053  -0.044  -0.042  -0.027
+ -0.015  -0.009   0.001   0.005   0.009   0.011   0.015   0.019
+  0.027   0.047   0.060   0.061   0.088   0.094   0.112   0.115
+  0.121   0.137   0.142   0.149   0.166   0.182   0.193   0.197
+  0.208   0.212   0.214   0.219   0.230   0.231   0.253   0.262
+  0.266   0.277   0.280   0.291   0.297   0.308   0.315   0.321
+  0.331   0.332   0.333   0.339   0.343   0.345   0.358   0.367
+  0.389   0.402   0.409   0.420   0.422   0.432   0.436   0.444
+  0.456   0.461   0.470   0.471   0.476   0.478   0.481   0.493
+  0.499   0.503   0.509   0.519   0.522   0.524   0.529   0.532
+  0.542   0.547   0.552   0.556   0.567   0.577   0.582   0.582
+  0.597   0.607   0.615   0.625   0.626   0.634   0.637   0.640
+  0.646   0.648   0.652   0.656   0.663   0.674   0.676   0.678
+  0.689   0.703   0.703   0.726   0.744   0.748   0.764   0.783
+  0.791   0.806   0.818   0.834   0.838   0.838   0.860   0.885
+  0.906   0.921   0.926   0.935   0.948   1.012   1.022   1.025
+  1.049   1.052   1.064   1.082   1.126   1.234   1.258   1.270
+  1.283
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)    Spin (a.u.)
+  --------------------------------------------------------
+      1 O                    -0.253522      -0.002286
+      2 O                     0.071993      -0.201849
+      3 Fe                    0.271259       2.293865
+      4 N                    -0.109915       0.068764
+      5 C                     0.094410       0.057769
+      6 N                    -0.242517      -0.000732
+      7 C                     0.065475       0.070573
+      8 C                    -0.016660       0.037316
+      9 H                     0.067213      -0.000596
+     10 H                     0.083417       0.000938
+     11 H                     0.083454      -0.000364
+     12 H                     0.250373       0.000316
+     13 H                     0.087897      -0.006310
+     14 C                     0.090150       0.166966
+     15 H                     0.233151       0.000090
+     16 N                    -0.245021      -0.019847
+     17 C                     0.021069       0.080199
+     18 C                     0.106600       0.124760
+     19 H                     0.095028      -0.003201
+     20 N                    -0.139685      -0.002312
+     21 H                     0.083242      -0.004859
+     22 H                     0.082094      -0.007149
+     23 C                     0.119648       0.215000
+     24 H                     0.264621      -0.000406
+     25 N                    -0.262347      -0.024304
+     26 C                     0.040210       0.116745
+     27 C                     0.157925       0.208524
+     28 H                     0.098243      -0.003163
+     29 N                    -0.053764       0.100005
+     30 H                     0.110332      -0.008042
+     31 H                     0.059201       0.000297
+     32 C                     0.042409       0.119948
+     33 H                     0.254078       0.001313
+     34 N                    -0.237141      -0.002165
+     35 C                     0.016302       0.053514
+     36 C                     0.148621       0.096740
+     37 H                     0.100613       0.008587
+     38 N                     0.244785       0.463518
+     39 H                     0.116760       0.001835
+  --------------------------------------------------------
+  Sum of atomic charges =     2.000000
+  Sum of spin   charges =     4.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 9.6064
+    Dipole Moment (Debye)
+         X     -18.2742      Y       3.6431      Z      -3.3747
+       Tot      18.9369
+    Quadrupole Moments (Debye-Ang)
+        XX     -24.2068     XY      -6.6861     YY     -63.4251
+        XZ       7.8254     YZ      25.1933     ZZ    -107.7569
+    Octopole Moments (Debye-Ang^2)
+       XXX     305.6099    XXY    -251.9348    XYY      -4.9715
+       YYY      69.2071    XXZ      12.4845    XYZ     -58.6513
+       YYZ      32.4410    XZZ      73.8744    YZZ      25.9850
+       ZZZ     -62.6637
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX  -15468.4437   XXXY   -1023.7872   XXYY   -3248.4162
+      XYYY    -266.4024   YYYY   -3113.6927   XXXZ     350.9587
+      XXYZ      42.3899   XYYZ     -97.4716   YYYZ     197.5515
+      XXZZ   -3767.6893   XYZZ     -83.4058   YYZZ   -1081.2451
+      XZZZ     163.0920   YZZZ     222.0126   ZZZZ   -2691.0761
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3           4           5           6
+    1   0.0206366  -0.0184244  -0.0024971  -0.0342560  -0.0160254  -0.0449548
+    2   0.0877128  -0.0810883  -0.0065125   0.0022858  -0.0780965   0.0271666
+    3  -0.0121057   0.0119648   0.0001146   0.0037882  -0.0054549   0.0079638
+            7           8           9          10          11          12
+    1   0.0480857   0.0333616  -0.0084214  -0.0095736   0.0047918   0.0241164
+    2   0.0621019   0.0052431  -0.0056869  -0.0029170   0.0079128  -0.0169657
+    3  -0.0071904  -0.0081849   0.0037271   0.0029173   0.0030530   0.0002934
+           13          14          15          16          17          18
+    1  -0.0063170   0.0439057   0.0102164  -0.0216867   0.0220996  -0.0291003
+    2  -0.0036996   0.0395827   0.0141460  -0.0225785   0.0178666  -0.0275339
+    3   0.0011658   0.0482091  -0.0246256   0.0486692  -0.0161721  -0.0584019
+           19          20          21          22          23          24
+    1  -0.0042384  -0.0197023   0.0023435  -0.0066127   0.0207997   0.0240676
+    2  -0.0015230  -0.0208040   0.0037872  -0.0097106   0.0299080   0.0208155
+    3  -0.0015259  -0.0026765   0.0034913  -0.0081391   0.0677752  -0.0243907
+           25          26          27          28          29          30
+    1  -0.0311922   0.0265169  -0.0152812  -0.0058959  -0.0160310   0.0090217
+    2  -0.0245996   0.0223472  -0.0229364  -0.0068919  -0.0143936   0.0080342
+    3   0.0421672  -0.0258400  -0.0768076  -0.0018131   0.0161109   0.0120200
+           31          32          33          34          35          36
+    1  -0.0007206  -0.0093284   0.0049608  -0.0057169   0.0186520   0.0354317
+    2  -0.0134305   0.0676668  -0.0149279   0.0002470  -0.0251221  -0.1075409
+    3   0.0059883  -0.0354316  -0.0348590   0.0455793  -0.0549830  -0.0195978
+           37          38          39
+    1  -0.0032257  -0.0365144  -0.0032913
+    2  -0.0062589   0.0747967   0.0215976
+    3   0.0208123   0.0826652  -0.0102763
+ Max gradient component =       1.075E-01
+ RMS gradient           =       3.121E-02
+ Gradient time:  CPU 39.14 s  wall 3.48 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+       39     742       0       0       0       0       0       0
+
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED INTERNAL COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   1
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  O        10.0441788926    0.6215861668   -0.1485910316
+      2  O        10.3123175354    1.8150426335   -0.3242210754
+      3  Fe        9.6092030209   -1.2785429520    0.1250214392
+      4  N        -3.5986025451    1.7000795842   -2.9871944130
+      5  C        -2.3505701027    1.2700302393   -3.2616276262
+      6  N        -2.2782437184   -0.0712863088   -3.3294649571
+      7  C        -3.5211597293   -0.5161510373   -3.0902044830
+      8  C        -4.3335603931    0.5756846432   -2.8806150967
+      9  H        -3.8137659368   -1.5576741430   -3.0694942949
+     10  H        -5.3927216788    0.5547188665   -2.6622781504
+     11  H        -1.5053960453    1.9289884255   -3.4099090217
+     12  H        -1.4302802684   -0.6470800401   -3.5270211159
+     13  H        -3.2549129195   -4.0562824734   -1.2118606708
+     14  C        -2.7887030242   -3.5620664328   -0.3698950444
+     15  H        -1.4999542975   -2.1544846147   -1.3359929385
+     16  N        -1.8816079520   -2.5778923282   -0.4621411961
+     17  C        -3.0089624357   -3.8173548885    0.9651258769
+     18  C        -1.5664385162   -2.2507868388    0.8038514985
+     19  H        -3.6861054265   -4.5549371910    1.3741588073
+     20  N        -2.2410581131   -2.9931144772    1.7048647635
+     21  H        -0.8545761655   -1.4810032365    1.0700283906
+     22  H        -5.0952549956   -1.1908677982   -0.5615344900
+     23  C        -4.8825536176   -0.8255525390    0.4337327855
+     24  H        -3.5090738954    0.7701743661    0.0468575292
+     25  N        -4.0563635013    0.1918235045    0.7217989528
+     26  C        -5.3950070644   -1.3097815548    1.6159499865
+     27  C        -4.0786215477    0.3113506602    2.0613272418
+     28  H        -6.0899706690   -2.1313261935    1.7249845129
+     29  N        -4.8903179981   -0.5957931974    2.6409937645
+     30  H        -3.5117382445    1.0488387446    2.6124804722
+     31  H        -0.7032589416    1.1951670324    1.3456012464
+     32  C        -1.0258087061    2.2267954782    1.3017580409
+     33  H        -1.0631342193    2.5976522181   -0.8057338457
+     34  N        -1.2050066251    2.9300237606    0.1731702605
+     35  C        -1.3240775558    3.0451883368    2.3680860611
+     36  C        -1.6054232456    4.1530034307    0.5641232789
+     37  H        -1.2799831062    2.7765713859    3.4149556968
+     38  N        -1.6890541937    4.2572422716    1.9058725738
+     39  H        -1.8340249995    4.9608943515   -0.1182760510
+   Point Group: c1    Number of degrees of freedom:   111
+
+
+   Energy is  -2316.682005463
+
+
+ Attempting to Generate Delocalized Internal Coordinates
+
+111 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000285    0.002245    0.002490    0.002528    0.002854    0.003695
+     0.005479    0.007629    0.008716    0.010562    0.011262    0.011341
+     0.013029    0.013138    0.013565    0.014068    0.014768    0.016111
+     0.016152    0.016261    0.017726    0.019437    0.020468    0.022754
+     0.022814    0.022818    0.022959    0.023135    0.023208    0.023581
+     0.023671    0.024107    0.024148    0.024668    0.024669    0.024718
+     0.025044    0.025872    0.028621    0.031882    0.033028    0.035419
+     0.037490    0.042639    0.045919    0.048609    0.050893    0.055027
+     0.062388    0.072501    0.074129    0.077982    0.095377    0.118606
+     0.123321    0.129716    0.138979    0.148152    0.152281    0.152907
+     0.154987    0.159999    0.160000    0.160000    0.160000    0.160000
+     0.160000    0.160000    0.160000    0.178730    0.215438    0.220000
+     0.220157    0.223993    0.229008    0.252546    0.261348    0.313120
+     0.334134    0.337961    0.341183    0.349027    0.357598    0.357658
+     0.357919    0.358017    0.358050    0.358352    0.358485    0.385167
+     0.396488    0.407449    0.413214    0.430631    0.446357    0.475540
+     0.477959    0.487613    0.494167    0.509792    0.513689    0.527860
+     0.529349    0.541279    0.546804    0.557797    0.557976    0.562797
+     0.562890    0.562962    0.827495
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.10665689
+ Calculated Step too Large.  Step scaled by  0.541227
+ Step Taken.  Stepsize is  0.300000
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.072087      0.000300      NO
+         Displacement       0.120948      0.001200      NO
+         Energy change     *********      0.000001      NO
+
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+
+ Displacement from previous Coordinates is:  2.827963
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      O      10.1547914476     0.5971758581    -0.3260897374
+    2      O      10.4325780761     1.8100622497    -0.5223587219
+    3      Fe      9.7131679929    -1.2904331306    -0.0264573110
+    4      N      -3.5428863099     1.7048511940    -2.9557586891
+    5      C      -2.2853431268     1.3074739710    -3.2012039078
+    6      N      -2.2304819663    -0.0536684811    -3.2824316753
+    7      C      -3.4962691089    -0.5284537288    -3.1035561484
+    8      C      -4.3052056886     0.5763715901    -2.9044687368
+    9      H      -3.7865669219    -1.5652291261    -3.1345139959
+   10      H      -5.3704211888     0.5628458389    -2.7491435617
+   11      H      -1.4389229547     1.9625874339    -3.3379506281
+   12      H      -1.3914028064    -0.6180954717    -3.4668328163
+   13      H      -3.2143900894    -3.9868170890    -1.1012970763
+   14      C      -2.7364030115    -3.4953151467    -0.2671434228
+   15      H      -1.4392689374    -2.1032939790    -1.2449181402
+   16      N      -1.8046400223    -2.5086313975    -0.3712946198
+   17      C      -2.9220189358    -3.7221770573     1.0953339027
+   18      C      -1.4487250231    -2.1610471590     0.9009050404
+   19      H      -3.5895658418    -4.4444075030     1.5408289040
+   20      N      -2.1162762396    -2.8885594902     1.8119628451
+   21      H      -0.7272847967    -1.3986901854     1.1438095889
+   22      H      -5.2756009365    -1.2973669934    -0.7255979852
+   23      C      -5.1527056449    -0.9842555275     0.2922382944
+   24      H      -3.7583965588     0.6079166630     0.0989241503
+   25      N      -4.3419560492     0.0227707908     0.6994968265
+   26      C      -5.7594320367    -1.4964011278     1.4371092570
+   27      C      -4.4579967063     0.1134963974     2.0544679210
+   28      H      -6.4639088361    -2.3085485378     1.4839024981
+   29      N      -5.3160747298    -0.8087589267     2.5165896662
+   30      H      -3.9380904205     0.8282507299     2.6595770370
+   31      H      -0.5495744761     1.2768421751     1.3937787074
+   32      C      -0.8642480168     2.3008552621     1.3487341767
+   33      H      -0.9499028192     2.6657297277    -0.7586377702
+   34      N      -1.0676657987     3.0076210766     0.2011897432
+   35      C      -1.1327317347     3.1391529819     2.4114900472
+   36      C      -1.4568377058     4.2558345267     0.5698502027
+   37      H      -1.0687405692     2.9101850199     3.4531044416
+   38      N      -1.4829397695     4.3224089832     1.8909112066
+   39      H      -1.6972546833     5.0465954436    -0.1058618355
+ ----------------------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =  1804.3763848471 hartrees
+ There are       94 alpha and       90 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-12
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =     0.0000000236 hartrees
+ Requested basis set is VDZ
+ There are 151 shells and 251 basis functions
+ A cutoff of  1.0D-12 yielded   7340 shell pairs
+ There are     19568 function pairs (     19658 Cartesian)
+ Smallest overlap matrix eigenvalue = 1.63E-03
+ Guess MOs from SCF MO coefficient file
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+ Exchange:  B88      Correlation:  LYP
+ Using SG-1 standard quadrature grid
+ using 12 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A unrestricted SCF calculation will be
+ performed using DIIS, GDM
+ SCF converges when RMS gradient is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1   -2316.6831426484      6.61e-04  
+    2   -2303.5475263615      1.19e-02  
+    3   -2314.5951012734      4.86e-03  Done DIIS. Switching to GDM
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -2314.5951012734      8.80e-01   Descent step
+    2   -2315.2215712060      7.86e-01   Descent step
+    3   -2315.4427129763      5.57e-01   Descent step
+    4   -2315.3546016068      7.51e-01  Line search: overstep
+    5   -2315.5181524194      2.61e-01   Descent step
+    6   -2315.4973202700      6.93e-01  Line search: overstep
+    7   -2315.5624609946      4.25e-01   Descent step
+    8   -2315.2870428775      8.65e-01  Line search: overstep
+    9   -2315.5986329027      2.18e-01   Descent step
+   10   -2315.6594126646      6.04e-01   Descent step
+   11   -2315.7783833113      4.53e-01   Descent step
+   12   -2315.8459854666      3.22e-01   Descent step
+   13   -2315.8603295891      5.32e-01   Descent step
+   14   -2315.9445115299      2.87e-01   Descent step
+   15   -2315.9555565030      5.03e-01   Descent step
+   16   -2316.0336503033      2.87e-01   Descent step
+   17   -2315.9591637724      1.33e+00  Line search: overstep
+   18   -2316.0974445930      1.74e-01   Descent step
+   19   -2316.1716938586      2.44e-01   Descent step
+   20   -2315.9576619031      9.88e-01  Line search: overstep
+   21   -2316.1938510444      6.80e-02   Normal BFGS step
+   22   -2316.1912396978      1.73e-01  Line search: overstep
+   23   -2316.2021557288      5.91e-02   Normal BFGS step
+   24   -2316.1996345712      1.47e-01  Line search: overstep
+   25   -2316.2054536800      3.92e-02   Normal BFGS step
+   26   -2316.1982651600      1.17e-01  Line search: overstep
+   27   -2316.2070494188      1.98e-02   Normal BFGS step
+   28   -2316.2088535375      3.29e-02   Normal BFGS step
+   29   -2316.2084842619      6.66e-02  Line search: overstep
+   30   -2316.2100609040      2.31e-02   Normal BFGS step
+   31   -2316.2121842570      3.24e-02   Normal BFGS step
+   32   -2316.2185209235      1.25e-01   Dog-leg BFGS step
+   33   -2316.1920304292      3.73e-01  Line search: overstep
+   34   -2316.2325383368      1.59e-01   Descent step
+   35   -2316.1434012507      4.06e-01  Line search: overstep
+   36   -2316.2460678899      1.81e-01   Descent step
+   37   -2316.1483853134      4.34e-01  Line search: overstep
+   38   -2316.2641533868      1.68e-01   Descent step
+   39   -2316.1507848050      3.95e-01  Line search: overstep
+   40   -2316.2814234405      1.24e-01   Dog-leg BFGS step
+   41   -2316.1895127165      4.69e-01  Line search: overstep
+   42   -2316.2958875560      1.24e-01   Dog-leg BFGS step
+   43   -2316.1780102683      5.65e-01  Line search: overstep
+   44   -2316.3061463263      1.24e-01   Dog-leg BFGS step
+   45   -2316.1108198280      1.07e+00  Line search: overstep
+   46   -2316.3134639343      1.21e-01   Dog-leg BFGS step
+   47   -2316.2756930000      5.06e-01  Line search: overstep
+   48   -2316.3299866748      1.82e-01   Descent step
+   49   -2316.0632720142      1.58e+00  Line search: overstep
+   50   -2316.3391540983      1.49e-01   Descent step
+   51   -2316.1481346950      9.72e-01  Line search: overstep
+   52   -2316.3490162433      2.21e-01   Descent step
+   53   -2316.0864920748      8.31e-01  Line search: overstep
+   54   -2316.3610730565      1.93e-01   Descent step
+   55   -2316.1892716944      1.03e+00  Line search: overstep
+   56   -2316.3737890037      2.61e-01   Descent step
+   57   -2316.1136435487      8.41e-01  Line search: overstep
+   58   -2316.3896739010      2.71e-01   Descent step
+   59   -2316.2534658978      1.06e+00  Line search: overstep
+   60   -2316.4070018977      3.22e-01   Descent step
+   61   -2316.1887404832      8.38e-01  Line search: overstep
+   62   -2316.4325627021      4.43e-01   Descent step
+   63   -2316.3530161509      1.13e+00  Line search: overstep
+   64   -2316.4653042548      4.26e-01   Descent step
+   65   -2316.2601315855      8.30e-01  Line search: overstep
+   66   -2316.5056990184      4.31e-01   Descent step
+   67   -2316.4364526220      1.14e+00  Line search: overstep
+   68   -2316.5398668875      4.70e-01   Descent step
+   69   -2316.1894201027      9.18e-01  Line search: overstep
+   70   -2316.5662232505      2.02e-01   Descent step
+   71   -2316.5388705878      7.26e-01  Line search: overstep
+   72   -2316.5913684221      4.70e-01   Descent step
+   73   -2316.2690499423      9.18e-01  Line search: overstep
+   74   -2316.6167121081      3.08e-01   Descent step
+   75   -2316.5555309721      7.63e-01  Line search: overstep
+   76   -2316.6419997448      4.31e-01   Descent step
+   77   -2316.3105738044      1.09e+00  Line search: overstep
+   78   -2316.6620409420      2.55e-01   Descent step
+   79   -2316.5283780547      9.88e-01  Line search: overstep
+   80   -2316.6744948466      3.38e-01   Descent step
+   81   -2316.2507684227      1.09e+00  Line search: overstep
+   82   -2316.6834154266      9.70e-02   Normal BFGS step
+   83   -2316.6824004672      7.30e-02  Line search: overstep
+   84   -2316.6975460522      3.64e-02   Normal BFGS step
+   85   -2316.6913789941      8.60e-02  Line search: overstep
+   86   -2316.6999348292      2.57e-02   Normal BFGS step
+   87   -2316.7005481037      5.07e-02   Normal BFGS step
+   88   -2316.7001134202      6.57e-02  Line search: overstep
+   89   -2316.7016260120      1.44e-02   Normal BFGS step
+   90   -2316.7022948724      2.69e-02   Normal BFGS step
+   91   -2316.7034997748      2.98e-02   Normal BFGS step
+   92   -2316.7042110893      1.89e-02   Normal BFGS step
+   93   -2316.7052970650      2.78e-02   Normal BFGS step
+   94   -2316.7060862944      1.87e-02   Normal BFGS step
+   95   -2316.7068834068      3.60e-02   Normal BFGS step
+   96   -2316.7074251352      1.90e-02   Normal BFGS step
+   97   -2316.7074475932      2.89e-02   Normal BFGS step
+   98   -2316.7081435317      6.60e-03   Normal BFGS step
+   99   -2316.7082412025      8.83e-03   Normal BFGS step
+  100   -2316.7084548165      1.24e-02   Normal BFGS step
+  101   -2316.7084670209      1.35e-02   Normal BFGS step
+  102   -2316.7087475546      6.66e-03   Normal BFGS step
+  103   -2316.7087162957      4.96e-02  Line search: overstep
+  104   -2316.7088785576      2.23e-02   Normal BFGS step
+  105   -2316.7058568311      1.64e-01  Line search: overstep
+  106   -2316.7089784802      5.90e-03   Normal BFGS step
+  107   -2316.7089678959      2.67e-02  Line search: overstep
+  108   -2316.7091968713      7.89e-03   Normal BFGS step
+  109   -2316.7092810689      3.70e-02   Normal BFGS step
+  110   -2316.7095483736      7.01e-03   Normal BFGS step
+  111   -2316.7096269971      6.61e-03   Normal BFGS step
+  112   -2316.7097137009      5.24e-03   Normal BFGS step
+  113   -2316.7097317054      8.24e-03   Normal BFGS step
+  114   -2316.7097981515      6.28e-03   Normal BFGS step
+  115   -2316.7098201426      3.53e-03   Normal BFGS step
+  116   -2316.7098675217      1.52e-03   Normal BFGS step
+  117   -2316.7098716212      3.58e-03   Normal BFGS step
+  118   -2316.7098839183      7.23e-04   Normal BFGS step
+  119   -2316.7098866652      6.13e-04   Normal BFGS step
+  120   -2316.7098903005      6.16e-04   Normal BFGS step
+  121   -2316.7098911862      8.52e-04   Normal BFGS step
+  122   -2316.7098930959      5.48e-04   Normal BFGS step
+  123   -2316.7098929269      1.11e-03  Line search: overstep
+  124   -2316.7098939348      2.78e-04   Normal BFGS step
+  125   -2316.7098945198      6.51e-04   Normal BFGS step
+  126   -2316.7098951200      1.59e-03   Normal BFGS step
+  127   -2316.7098920541      5.41e-03  Line search: overstep
+  128   -2316.7098954016      2.58e-04   Normal BFGS step
+  129   -2316.7098956506      4.52e-04   Normal BFGS step
+  130   -2316.7098960471      6.80e-04   Normal BFGS step
+  131   -2316.7098963400      6.20e-04   Normal BFGS step
+  132   -2316.7098966324      5.01e-04   Normal BFGS step
+  133   -2316.7098971026      3.82e-04   Normal BFGS step
+  134   -2316.7098972394      4.51e-04   Normal BFGS step
+  135   -2316.7098975905      1.37e-04   Normal BFGS step
+  136   -2316.7098976194      1.97e-04   Normal BFGS step
+  137   -2316.7098978625      1.24e-04   Normal BFGS step
+  138   -2316.7098979084      1.93e-04   Normal BFGS step
+  139   -2316.7098981219      8.25e-05   Normal BFGS step
+  140   -2316.7098981511      1.30e-04   Normal BFGS step
+  141   -2316.7098982718      1.25e-04   Normal BFGS step
+  142   -2316.7098982490      2.65e-04  Line search: overstep
+  143   -2316.7098983154      7.29e-05   Normal BFGS step
+  144   -2316.7098983659      7.41e-05   Normal BFGS step
+  145   -2316.7098984296      1.06e-04   Normal BFGS step
+  146   -2316.7098984490      2.57e-04   Normal BFGS step
+  147   -2316.7098983912      9.84e-04  Line search: overstep
+  148   -2316.7098984698      1.64e-04   Normal BFGS step
+  149   -2316.7098983805      5.19e-04  Line search: overstep
+  150   -2316.7098985046      1.16e-04   Normal BFGS step
+  151   -2316.7098985057      2.55e-04   Normal BFGS step
+  152   -2316.7098985632      8.96e-05   Normal BFGS step
+  153   -2316.7098985789      9.02e-05   Normal BFGS step
+  154   -2316.7098986144      1.20e-04   Normal BFGS step
+  155   -2316.7098986210      1.44e-04   Normal BFGS step
+  156   -2316.7098986421      4.57e-05   Normal BFGS step
+  157   -2316.7098986482      6.56e-05   Normal BFGS step
+  158   -2316.7098986636      5.79e-05   Normal BFGS step
+  159   -2316.7098986734      5.95e-05   Normal BFGS step
+  160   -2316.7098986810      1.15e-04   Normal BFGS step
+  161   -2316.7098986919      1.04e-04   Normal BFGS step
+  162   -2316.7098986981      3.67e-05   Normal BFGS step
+  163   -2316.7098987069      3.37e-05   Normal BFGS step
+  164   -2316.7098987091      3.99e-05   Normal BFGS step
+  165   -2316.7098987144      2.17e-05   Normal BFGS step
+  166   -2316.7098987164      2.28e-05   Normal BFGS step
+  167   -2316.7098987187      1.01e-04   Normal BFGS step
+  168   -2316.7098986957      4.79e-04  Line search: overstep
+  169   -2316.7098987199      2.32e-05   Normal BFGS step
+  170   -2316.7098987181      5.22e-05   Normal BFGS step
+  171   -2316.7098987218      2.06e-05   Normal BFGS step
+  172   -2316.7098987214      1.63e-05   Normal BFGS step
+  173   -2316.7098987225      1.30e-05   Normal BFGS step
+  174   -2316.7098987218      3.73e-05   Normal BFGS step
+  175   -2316.7098987227      5.94e-06   Normal BFGS step
+  176   -2316.7098987226      7.34e-06   Normal BFGS step
+  177   -2316.7098987228      1.91e-06   Normal BFGS step
+  178   -2316.7098987228      1.67e-06   Normal BFGS step
+  179   -2316.7098987228      2.90e-06   Normal BFGS step
+  180   -2316.7098987228      2.13e-06   Normal BFGS step
+  181   -2316.7098987228      2.52e-06   Normal BFGS step
+  182   -2316.7098987228      4.44e-06   Normal BFGS step
+  183   -2316.7098987228      1.67e-06   Normal BFGS step
+  184   -2316.7098987228      1.49e-06   Normal BFGS step
+  185   -2316.7098987229      1.01e-06   Normal BFGS step
+  186   -2316.7098987229      1.41e-06   Normal BFGS step
+  187   -2316.7098987229      2.73e-06   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.52e-09
+  188   -2316.7098987228      2.96e-05   Normal BFGS step
+  189   -2316.7098987229      3.84e-06   Normal BFGS step
+  190   -2316.7098987228      3.05e-06   Normal BFGS step
+  191   -2316.7098987229      1.14e-06   Normal BFGS step
+  192   -2316.7098987229      1.85e-06   Normal BFGS step
+  193   -2316.7098987229      7.14e-07   Normal BFGS step
+  194   -2316.7098987229      2.19e-06   Normal BFGS step
+  195   -2316.7098987229      1.15e-06   Normal BFGS step
+  196   -2316.7098987229      1.67e-06   Normal BFGS step
+  197   -2316.7098987229      8.59e-07   Normal BFGS step
+  198   -2316.7098987229      9.01e-07   Normal BFGS step
+  199   -2316.7098987229      1.22e-06   Normal BFGS step
+  200   -2316.7098987229      8.47e-07   Normal BFGS step
+  201   -2316.7098987229      9.99e-07   Normal BFGS step
+  202   -2316.7098987230      4.38e-06   Normal BFGS step
+  203   -2316.7098987230      2.21e-06   Normal BFGS step
+  204   -2316.7098987230      1.69e-06   Normal BFGS step
+  205   -2316.7098987230      1.44e-06   Normal BFGS step
+  206   -2316.7098987230      4.58e-06   Normal BFGS step
+  207   -2316.7098987230      1.52e-05   Normal BFGS step
+  208   -2316.7098987229      1.66e-05   Normal BFGS step
+  209   -2316.7098987230      2.84e-06   Normal BFGS step
+  210   -2316.7098987230      3.26e-06   Normal BFGS step
+  211   -2316.7098987231      1.42e-06   Normal BFGS step
+  212   -2316.7098987231      2.40e-06   Normal BFGS step
+  213   -2316.7098987231      1.22e-06   Normal BFGS step
+  214   -2316.7098987231      3.26e-06   Normal BFGS step
+  215   -2316.7098987231      2.20e-06   Normal BFGS step
+  216   -2316.7098987231      1.23e-06   Normal BFGS step
+  217   -2316.7098987231      7.62e-07   Normal BFGS step
+  218   -2316.7098987231      6.07e-07   Normal BFGS step
+  219   -2316.7098987231      1.03e-06   Normal BFGS step
+  220   -2316.7098987231      1.24e-06   Normal BFGS step
+  221   -2316.7098987231      9.56e-07   Normal BFGS step
+  222   -2316.7098987231      1.30e-06   Normal BFGS step
+  223   -2316.7098987231      3.47e-07   Normal BFGS step
+  224   -2316.7098987231      5.75e-07   Normal BFGS step
+  225   -2316.7098987231      8.41e-07   Normal BFGS step
+  226   -2316.7098987231      8.05e-06   Normal BFGS step
+  227   -2316.7098987231      9.98e-07   Normal BFGS step
+  228   -2316.7098987231      1.57e-06   Normal BFGS step
+  229   -2316.7098987231      1.81e-07   Normal BFGS step
+  230   -2316.7098987231      2.36e-07   Normal BFGS step
+  231   -2316.7098987231      1.89e-07   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.52e-09
+  232   -2316.7098987231      2.11e-07   Normal BFGS step
+  233   -2316.7098987231      2.09e-07   Normal BFGS step
+  234   -2316.7098987231      1.95e-07   Normal BFGS step
+  235   -2316.7098987231      1.61e-07   Normal BFGS step
+  236   -2316.7098987231      3.00e-07   Normal BFGS step
+  237   -2316.7098987231      1.14e-07   Normal BFGS step
+  238   -2316.7098987231      1.44e-07   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.52e-09
+  239   -2316.7098987231      1.67e-07   Normal BFGS step
+  240   -2316.7098987231      2.19e-07   Normal BFGS step
+  241   -2316.7098987231      5.77e-07   Normal BFGS step
+  242   -2316.7098987231      1.47e-07   Normal BFGS step
+  243   -2316.7098987231      2.46e-07   Normal BFGS step
+  244   -2316.7098987231      1.27e-07   Normal BFGS step
+  245   -2316.7098987231      1.30e-07   Normal BFGS step
+  246   -2316.7098987231      5.91e-07   Normal BFGS step
+  247   -2316.7098987231      1.99e-06   Normal BFGS step
+  248   -2316.7098987231      7.61e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.52e-09
+  249   -2316.7098987231      1.48e-07   Normal BFGS step
+  250   -2316.7098987231      5.45e-08   Normal BFGS step
+  251   -2316.7098987231      5.83e-08   Normal BFGS step
+  252   -2316.7098987231      4.71e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.52e-09
+  253   -2316.7098987231      1.04e-07   Normal BFGS step
+  254   -2316.7098987231      9.30e-08   Normal BFGS step
+  255   -2316.7098987231      1.47e-07   Normal BFGS step
+  256   -2316.7098987231      3.42e-08   Normal BFGS step
+  257   -2316.7098987231      5.97e-08   Normal BFGS step
+  258   -2316.7098987231      1.93e-08   Normal BFGS step
+  259   -2316.7098987231      3.82e-08   Normal BFGS step
+  260   -2316.7098987231      2.81e-08   Normal BFGS step
+  261   -2316.7098987231      6.38e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.52e-09
+  262   -2316.7098987231      4.51e-08   Normal BFGS step
+  263   -2316.7098987231      5.11e-08   Normal BFGS step
+  264   -2316.7098987231      1.79e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.52e-09
+  265   -2316.7098987231      1.01e-07   Normal BFGS step
+  266   -2316.7098987231      1.50e-07   Normal BFGS step
+  267   -2316.7098987231      1.18e-07   Normal BFGS step
+  268   -2316.7098987231      1.34e-08   Normal BFGS step
+  269   -2316.7098987231      1.99e-08   Normal BFGS step
+  270   -2316.7098987231      4.00e-09  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 5881.09s  wall 496.00s 
+<S^2> =          6.816002873
+ SCF   energy in the final basis set =    -2316.7098987231
+ Total energy in the final basis set =    -2316.7098987231
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+******* -29.794 -25.751 -25.750 -25.745 -19.120 -19.101 -14.289
+-14.283 -14.278 -14.272 -14.210 -14.201 -14.201 -14.197 -10.185
+-10.184 -10.169 -10.167 -10.165 -10.164 -10.146 -10.142 -10.141
+-10.138 -10.124 -10.123  -3.567  -2.393  -2.393  -2.376  -1.334
+ -1.145  -1.142  -1.136  -1.130  -0.997  -0.997  -0.991  -0.986
+ -0.916  -0.876  -0.873  -0.862  -0.862  -0.763  -0.759  -0.753
+ -0.752  -0.736  -0.734  -0.725  -0.724  -0.710  -0.707  -0.699
+ -0.697  -0.675  -0.645  -0.621  -0.603  -0.602  -0.600  -0.594
+ -0.593  -0.592  -0.591  -0.587  -0.583  -0.582  -0.581  -0.580
+ -0.567  -0.566  -0.563  -0.559  -0.501  -0.498  -0.497  -0.492
+ -0.464  -0.457  -0.450  -0.449  -0.446  -0.419  -0.414  -0.413
+ -0.402  -0.399  -0.397  -0.395  -0.394  -0.392
+ -- Virtual --
+ -0.385  -0.383  -0.218  -0.212  -0.211  -0.208  -0.195  -0.180
+ -0.171  -0.166  -0.158  -0.156  -0.149  -0.144  -0.141  -0.137
+ -0.119  -0.093  -0.091  -0.082  -0.078  -0.072  -0.067  -0.059
+ -0.055  -0.047  -0.045  -0.032  -0.017  -0.010  -0.003   0.002
+  0.003   0.005   0.008   0.012   0.026   0.047   0.057   0.059
+  0.086   0.092   0.105   0.108   0.114   0.130   0.140   0.149
+  0.161   0.177   0.191   0.196   0.202   0.207   0.211   0.213
+  0.227   0.229   0.252   0.257   0.261   0.269   0.278   0.285
+  0.291   0.303   0.312   0.315   0.319   0.327   0.330   0.331
+  0.334   0.345   0.350   0.359   0.368   0.388   0.403   0.413
+  0.416   0.428   0.435   0.441   0.456   0.459   0.462   0.467
+  0.470   0.475   0.481   0.488   0.497   0.501   0.506   0.514
+  0.521   0.522   0.525   0.527   0.537   0.538   0.547   0.548
+  0.553   0.564   0.579   0.586   0.591   0.600   0.602   0.619
+  0.626   0.629   0.630   0.631   0.636   0.636   0.641   0.642
+  0.649   0.649   0.651   0.655   0.665   0.674   0.700   0.707
+  0.735   0.745   0.754   0.766   0.791   0.793   0.812   0.817
+  0.823   0.828   0.847   0.865   0.905   0.915   0.931   0.936
+  0.945   1.011   1.021   1.025   1.027   1.044   1.053   1.070
+  1.081   1.225   1.256   1.258   1.274
+ 
+ Beta MOs
+ -- Occupied --
+******* -29.743 -25.711 -25.710 -25.708 -19.119 -19.106 -14.289
+-14.283 -14.278 -14.272 -14.205 -14.201 -14.200 -14.196 -10.183
+-10.182 -10.169 -10.164 -10.164 -10.163 -10.146 -10.142 -10.140
+-10.137 -10.124 -10.123  -3.443  -2.271  -2.268  -2.259  -1.339
+ -1.142  -1.140  -1.134  -1.130  -0.997  -0.995  -0.987  -0.986
+ -0.921  -0.870  -0.868  -0.862  -0.860  -0.762  -0.758  -0.752
+ -0.751  -0.733  -0.732  -0.724  -0.722  -0.708  -0.705  -0.699
+ -0.696  -0.677  -0.658  -0.619  -0.601  -0.599  -0.597  -0.593
+ -0.591  -0.590  -0.590  -0.583  -0.581  -0.580  -0.580  -0.579
+ -0.565  -0.564  -0.562  -0.559  -0.455  -0.447  -0.447  -0.446
+ -0.445  -0.422  -0.407  -0.407  -0.398  -0.396  -0.391  -0.391
+ -0.390  -0.389
+ -- Virtual --
+ -0.389  -0.389  -0.372  -0.367  -0.363  -0.350  -0.212  -0.209
+ -0.207  -0.201  -0.194  -0.177  -0.167  -0.160  -0.155  -0.154
+ -0.148  -0.144  -0.136  -0.136  -0.118  -0.092  -0.090  -0.081
+ -0.078  -0.072  -0.067  -0.058  -0.054  -0.047  -0.043  -0.030
+ -0.016  -0.009  -0.002   0.003   0.005   0.007   0.009   0.014
+  0.028   0.048   0.059   0.061   0.087   0.093   0.108   0.109
+  0.115   0.133   0.141   0.151   0.164   0.180   0.193   0.198
+  0.204   0.210   0.213   0.218   0.228   0.232   0.253   0.258
+  0.265   0.273   0.280   0.290   0.293   0.304   0.315   0.316
+  0.321   0.329   0.332   0.333   0.335   0.346   0.353   0.361
+  0.370   0.391   0.406   0.415   0.420   0.432   0.437   0.443
+  0.458   0.460   0.469   0.471   0.475   0.477   0.483   0.489
+  0.499   0.502   0.509   0.515   0.523   0.523   0.526   0.539
+  0.540   0.548   0.549   0.554   0.554   0.564   0.580   0.585
+  0.592   0.601   0.603   0.622   0.630   0.631   0.632   0.637
+  0.641   0.645   0.651   0.654   0.654   0.660   0.666   0.675
+  0.680   0.702   0.706   0.709   0.745   0.754   0.764   0.767
+  0.794   0.804   0.818   0.829   0.842   0.842   0.848   0.866
+  0.906   0.916   0.933   0.938   0.946   1.012   1.023   1.026
+  1.029   1.046   1.053   1.071   1.082   1.225   1.257   1.259
+  1.275
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)    Spin (a.u.)
+  --------------------------------------------------------
+      1 O                    -0.275456      -0.007918
+      2 O                     0.069790      -0.222855
+      3 Fe                    1.205665       3.230772
+      4 N                    -0.210775       0.009047
+      5 C                     0.094578       0.017861
+      6 N                    -0.277257      -0.000841
+      7 C                     0.056515       0.029522
+      8 C                    -0.028472       0.013774
+      9 H                     0.068674      -0.000776
+     10 H                     0.080274      -0.000081
+     11 H                     0.087276      -0.000286
+     12 H                     0.237008      -0.000376
+     13 H                     0.090256      -0.006310
+     14 C                     0.018440       0.073127
+     15 H                     0.225081       0.000084
+     16 N                    -0.275896      -0.023833
+     17 C                    -0.034739       0.027128
+     18 C                     0.051725       0.063067
+     19 H                     0.097006      -0.003538
+     20 N                    -0.155494      -0.013905
+     21 H                     0.088422      -0.005743
+     22 H                     0.078324      -0.006581
+     23 C                     0.036811       0.108970
+     24 H                     0.250543       0.000542
+     25 N                    -0.275367      -0.025922
+     26 C                    -0.030926       0.060623
+     27 C                     0.101500       0.112883
+     28 H                     0.100076      -0.001436
+     29 N                     0.025346       0.180484
+     30 H                     0.106427      -0.006261
+     31 H                     0.045094       0.001687
+     32 C                     0.056034       0.053539
+     33 H                     0.236710      -0.000083
+     34 N                    -0.265349       0.006940
+     35 C                     0.026327       0.014759
+     36 C                     0.170037       0.015982
+     37 H                     0.082142       0.006788
+     38 N                    -0.062350       0.294772
+     39 H                     0.106000       0.004393
+  --------------------------------------------------------
+  Sum of atomic charges =     2.000000
+  Sum of spin   charges =     4.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 9.6064
+    Dipole Moment (Debye)
+         X      35.8450      Y      -6.5149      Z      -4.7693
+       Tot      36.7431
+    Quadrupole Moments (Debye-Ang)
+        XX     353.3388     XY     -59.4092     YY     -99.8989
+        XZ       4.7371     YZ      15.5160     ZZ    -119.7476
+    Octopole Moments (Debye-Ang^2)
+       XXX    4487.3422    XXY    -838.3772    XYY     183.7823
+       YYY     -37.9308    XXZ       9.5454    XYZ     -39.6913
+       YYZ     -26.8082    XZZ     128.0320    YZZ     -11.1190
+       ZZZ     -36.2809
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX   23365.8439   XXXY   -6818.7877   XXYY   -2672.2148
+      XYYY    -390.5860   YYYY   -3932.0170   XXXZ     151.5986
+      XXYZ     133.7560   XYYZ      23.6998   YYYZ     -42.9852
+      XXZZ   -3716.8685   XYZZ     -67.0537   YYZZ   -1237.0703
+      XZZZ     193.8727   YZZZ     211.6742   ZZZZ   -2755.7809
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3           4           5           6
+    1   0.0205004  -0.0097384  -0.0125972  -0.0037311  -0.0039562  -0.0316246
+    2   0.0852981  -0.0419344  -0.0429932  -0.0406332  -0.0195454   0.0190955
+    3  -0.0130896   0.0068319   0.0060438  -0.0037684  -0.0023657   0.0047061
+            7           8           9          10          11          12
+    1   0.0200212   0.0095546   0.0001458   0.0182223  -0.0109836   0.0001216
+    2   0.0209971   0.0144186   0.0178779  -0.0048820  -0.0077677   0.0002199
+    3  -0.0017333  -0.0021253   0.0032468  -0.0021198   0.0031117   0.0044536
+           13          14          15          16          17          18
+    1   0.0085224   0.0193351  -0.0007925  -0.0179837   0.0124316  -0.0093150
+    2   0.0102475   0.0208314  -0.0000641  -0.0188310   0.0120443  -0.0078468
+    3   0.0199074   0.0114997   0.0025668   0.0290914   0.0040305  -0.0153274
+           19          20          21          22          23          24
+    1   0.0128360  -0.0115058  -0.0155529   0.0010144   0.0163373  -0.0030572
+    2   0.0149566  -0.0125479  -0.0157640   0.0067090   0.0153938  -0.0067344
+    3  -0.0118733  -0.0361185  -0.0042991   0.0260040   0.0189046   0.0070452
+           25          26          27          28          29          30
+    1  -0.0259640   0.0163084   0.0065552   0.0121231  -0.0089811  -0.0096170
+    2  -0.0195541   0.0066705   0.0027342   0.0168024  -0.0063247  -0.0169402
+    3   0.0127677  -0.0089658  -0.0342638  -0.0023548  -0.0109015  -0.0106057
+           31          32          33          34          35          36
+    1  -0.0073411  -0.0049100   0.0011354  -0.0055259   0.0009245   0.0064935
+    2   0.0137332   0.0359207  -0.0013629   0.0060369   0.0169043  -0.0257989
+    3   0.0042278  -0.0163525  -0.0015539   0.0271775  -0.0091091   0.0041307
+           37          38          39
+    1  -0.0026357   0.0075986   0.0056318
+    2  -0.0004229  -0.0359346  -0.0110095
+    3  -0.0160751  -0.0037060   0.0109614
+ Max gradient component =       8.530E-02
+ RMS gradient           =       1.731E-02
+ Gradient time:  CPU 38.22 s  wall 3.32 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+       39     742       0       0       0       0       0       0
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED INTERNAL COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   2
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  O        10.1547914476    0.5971758581   -0.3260897374
+      2  O        10.4325780761    1.8100622497   -0.5223587219
+      3  Fe        9.7131679929   -1.2904331306   -0.0264573110
+      4  N        -3.5428863099    1.7048511940   -2.9557586891
+      5  C        -2.2853431268    1.3074739710   -3.2012039078
+      6  N        -2.2304819663   -0.0536684811   -3.2824316753
+      7  C        -3.4962691089   -0.5284537288   -3.1035561484
+      8  C        -4.3052056886    0.5763715901   -2.9044687368
+      9  H        -3.7865669219   -1.5652291261   -3.1345139959
+     10  H        -5.3704211888    0.5628458389   -2.7491435617
+     11  H        -1.4389229547    1.9625874339   -3.3379506281
+     12  H        -1.3914028064   -0.6180954717   -3.4668328163
+     13  H        -3.2143900894   -3.9868170890   -1.1012970763
+     14  C        -2.7364030115   -3.4953151467   -0.2671434228
+     15  H        -1.4392689374   -2.1032939790   -1.2449181402
+     16  N        -1.8046400223   -2.5086313975   -0.3712946198
+     17  C        -2.9220189358   -3.7221770573    1.0953339027
+     18  C        -1.4487250231   -2.1610471590    0.9009050404
+     19  H        -3.5895658418   -4.4444075030    1.5408289040
+     20  N        -2.1162762396   -2.8885594902    1.8119628451
+     21  H        -0.7272847967   -1.3986901854    1.1438095889
+     22  H        -5.2756009365   -1.2973669934   -0.7255979852
+     23  C        -5.1527056449   -0.9842555275    0.2922382944
+     24  H        -3.7583965588    0.6079166630    0.0989241503
+     25  N        -4.3419560492    0.0227707908    0.6994968265
+     26  C        -5.7594320367   -1.4964011278    1.4371092570
+     27  C        -4.4579967063    0.1134963974    2.0544679210
+     28  H        -6.4639088361   -2.3085485378    1.4839024981
+     29  N        -5.3160747298   -0.8087589267    2.5165896662
+     30  H        -3.9380904205    0.8282507299    2.6595770370
+     31  H        -0.5495744761    1.2768421751    1.3937787074
+     32  C        -0.8642480168    2.3008552621    1.3487341767
+     33  H        -0.9499028192    2.6657297277   -0.7586377702
+     34  N        -1.0676657987    3.0076210766    0.2011897432
+     35  C        -1.1327317347    3.1391529819    2.4114900472
+     36  C        -1.4568377058    4.2558345267    0.5698502027
+     37  H        -1.0687405692    2.9101850199    3.4531044416
+     38  N        -1.4829397695    4.3224089832    1.8909112066
+     39  H        -1.6972546833    5.0465954436   -0.1058618355
+   Point Group: c1    Number of degrees of freedom:   111
+
+
+   Energy is  -2316.709898723
+
+ Hessian Updated using BFGS Update
+
+111 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000285    0.002244    0.002490    0.002528    0.002854    0.003697
+     0.005482    0.007626    0.008713    0.010563    0.011263    0.011621
+     0.012959    0.013189    0.013577    0.014616    0.014757    0.016111
+     0.016187    0.016260    0.017731    0.019606    0.020705    0.022730
+     0.022811    0.022822    0.023022    0.023122    0.023301    0.023620
+     0.023667    0.024134    0.024142    0.024655    0.024717    0.024932
+     0.025046    0.025874    0.028617    0.031767    0.032983    0.035456
+     0.037285    0.042636    0.046063    0.048698    0.050850    0.055166
+     0.062527    0.072573    0.074161    0.078052    0.094852    0.115423
+     0.124008    0.128641    0.133967    0.142676    0.148567    0.153054
+     0.155061    0.159838    0.159999    0.160000    0.160000    0.160000
+     0.160000    0.160000    0.161965    0.178672    0.210896    0.217159
+     0.220113    0.226284    0.229968    0.251940    0.258555    0.274984
+     0.334281    0.338967    0.339710    0.343175    0.356363    0.357746
+     0.357821    0.358032    0.358204    0.358430    0.381582    0.387249
+     0.396991    0.401155    0.413464    0.430640    0.439517    0.449793
+     0.477558    0.490054    0.496631    0.510076    0.518972    0.520269
+     0.531366    0.541438    0.547745    0.557352    0.559361    0.562103
+     0.562902    0.789388    1.344894
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.08965637
+ Calculated Step too Large.  Step scaled by  0.497514
+ Step Taken.  Stepsize is  0.300000
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.061412      0.000300      NO
+         Displacement       0.107610      0.001200      NO
+         Energy change     -0.027893      0.000001      NO
+
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+
+ Displacement from previous Coordinates is:  2.031129
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      O      10.2428435262     0.6246778999    -0.4401075870
+    2      O      10.5180145127     1.8677544211    -0.6415112370
+    3      Fe      9.8261647239    -1.2142117536    -0.1475315279
+    4      N      -3.4922969354     1.7161591277    -2.9558594098
+    5      C      -2.2286194934     1.3128108773    -3.1771605456
+    6      N      -2.1948834626    -0.0779193743    -3.2619769690
+    7      C      -3.4954285541    -0.5596685526    -3.1086555655
+    8      C      -4.2905591050     0.5791218277    -2.9319203773
+    9      H      -3.8059336089    -1.5985501705    -3.1506288574
+   10      H      -5.3706192846     0.5893213106    -2.8166986174
+   11      H      -1.3715693296     1.9682637375    -3.3010513167
+   12      H      -1.3599446073    -0.6391281358    -3.4402451200
+   13      H      -3.1172390574    -4.0775894930    -1.0994258298
+   14      C      -2.6364880706    -3.5787460569    -0.2516323860
+   15      H      -1.3483369790    -2.1420689947    -1.2250975844
+   16      N      -1.6970474496    -2.5541488114    -0.3532187221
+   17      C      -2.7954281265    -3.8006311212     1.1420381496
+   18      C      -1.3178421555    -2.1956166050     0.9408542559
+   19      H      -3.4499125690    -4.5374636504     1.6175157299
+   20      N      -1.9728540959    -2.9370647960     1.8601243270
+   21      H      -0.5939534913    -1.4185619045     1.1779875063
+   22      H      -5.4316361745    -1.2897973675    -0.8124614076
+   23      C      -5.3781066442    -0.9691917717     0.2242632328
+   24      H      -3.9686866761     0.6377083613     0.1231857103
+   25      N      -4.5794153450     0.0614168136     0.6929460579
+   26      C      -6.0619209582    -1.4637029706     1.3672760196
+   27      C      -4.7773050488     0.1806479835     2.0659637371
+   28      H      -6.7756768956    -2.2831283191     1.4027598918
+   29      N      -5.6608367380    -0.7457667601     2.4641368806
+   30      H      -4.2947299420     0.9149969779     2.6947631377
+   31      H      -0.4319009188     1.2628598166     1.4320877910
+   32      C      -0.7546829626     2.2887432932     1.3944700690
+   33      H      -0.8733015757     2.6737580579    -0.7245286774
+   34      N      -0.9815873508     3.0129085010     0.2295076007
+   35      C      -1.0175256590     3.1375870412     2.4672137372
+   36      C      -1.3814473347     4.2849585846     0.6006282240
+   37      H      -0.9402980230     2.9305254359     3.5159394227
+   38      N      -1.3788371022     4.3205850275     1.9167028004
+   39      H      -1.6397639836     5.0770293681    -0.0719648665
+ ----------------------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =  1771.0010565951 hartrees
+ There are       94 alpha and       90 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-12
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =     0.0000000245 hartrees
+ Requested basis set is VDZ
+ There are 151 shells and 251 basis functions
+ A cutoff of  1.0D-12 yielded   7212 shell pairs
+ There are     19216 function pairs (     19306 Cartesian)
+ Smallest overlap matrix eigenvalue = 2.03E-03
+ Guess MOs from SCF MO coefficient file
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+ Exchange:  B88      Correlation:  LYP
+ Using SG-1 standard quadrature grid
+ using 12 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A unrestricted SCF calculation will be
+ performed using DIIS, GDM
+ SCF converges when RMS gradient is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1   -2316.7033559358      7.29e-04  
+    2   -2305.8694984296      1.13e-02  
+    3   -2316.5862416810      1.82e-03  Done DIIS. Switching to GDM
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -2316.5862416810      3.11e-01   Descent step
+    2   -2316.6710758217      4.60e-01   Descent step
+    3   -2316.3796268242      1.08e+00  Line search: overstep
+    4   -2316.7009939457      6.44e-02   Dog-leg BFGS step
+    5   -2316.5900464027      3.81e-01  Line search: overstep
+    6   -2316.7096346264      6.49e-02   Normal BFGS step
+    7   -2316.7132155767      2.78e-02   Normal BFGS step
+    8   -2316.7123507448      6.79e-02  Line search: overstep
+    9   -2316.7141379276      1.80e-02   Normal BFGS step
+   10   -2316.7154465158      4.26e-02   Normal BFGS step
+   11   -2316.7188509135      8.55e-02   Normal BFGS step
+   12   -2316.7240056534      3.18e-02   Normal BFGS step
+   13   -2316.7207732233      1.29e-01  Line search: overstep
+   14   -2316.7268907469      6.86e-02   Normal BFGS step
+   15   -2316.7176574720      2.51e-01  Line search: overstep
+   16   -2316.7284359994      1.17e-02   Normal BFGS step
+   17   -2316.7282243797      2.85e-02  Line search: overstep
+   18   -2316.7288323539      7.43e-03   Normal BFGS step
+   19   -2316.7289594859      8.11e-03   Normal BFGS step
+   20   -2316.7291031765      7.83e-03   Normal BFGS step
+   21   -2316.7292443543      6.23e-03   Normal BFGS step
+   22   -2316.7293418687      5.80e-03   Normal BFGS step
+   23   -2316.7294190172      2.42e-03   Normal BFGS step
+   24   -2316.7294343482      2.40e-03   Normal BFGS step
+   25   -2316.7294625948      3.53e-03   Normal BFGS step
+   26   -2316.7295454098      7.93e-03  Line search: understep
+   27   -2316.7259702964      1.24e-01  Line search: overstep
+   28   -2316.7296166140      1.15e-02   Dog-leg BFGS step
+   29   -2316.6657655421      4.93e-01  Line search: overstep
+   30   -2316.7298648164      1.60e-02   Dog-leg BFGS step
+   31   -2316.6553384122      3.92e-01  Line search: overstep
+   32   -2316.7303041436      1.43e-02   Dog-leg BFGS step
+   33   -2316.5729947820      7.01e-01  Line search: overstep
+   34   -2316.7301384456      9.60e-02  Line search: overstep
+   35   -2316.7306802641      3.58e-02   Normal BFGS step
+   36   -2316.7069003979      2.81e-01  Line search: overstep
+   37   -2316.7310510883      1.65e-02   Normal BFGS step
+   38   -2316.7290433739      4.96e-02  Line search: overstep
+   39   -2316.7313453395      1.16e-02   Normal BFGS step
+   40   -2316.7313059496      2.18e-02  Line search: overstep
+   41   -2316.7315547452      1.06e-02   Normal BFGS step
+   42   -2316.7316209381      1.79e-02   Normal BFGS step
+   43   -2316.7317838829      5.25e-03   Normal BFGS step
+   44   -2316.7317690100      9.61e-03  Line search: overstep
+   45   -2316.7318571368      6.13e-03   Normal BFGS step
+   46   -2316.7319009448      5.54e-03   Normal BFGS step
+   47   -2316.7319596794      1.18e-02   Normal BFGS step
+   48   -2316.7319868839      8.51e-03   Normal BFGS step
+   49   -2316.7320273940      4.99e-03   Normal BFGS step
+   50   -2316.7320637923      2.49e-03   Normal BFGS step
+   51   -2316.7320654627      1.32e-02   Normal BFGS step
+   52   -2316.7321090417      3.11e-03   Normal BFGS step
+   53   -2316.7321166676      2.10e-03   Normal BFGS step
+   54   -2316.7321443525      3.99e-03   Normal BFGS step
+   55   -2316.7321396959      2.55e-03  Line search: overstep
+   56   -2316.7321522426      2.65e-03   Normal BFGS step
+   57   -2316.7321594992      1.58e-03   Normal BFGS step
+   58   -2316.7321650669      1.31e-03   Normal BFGS step
+   59   -2316.7321672886      5.45e-03   Normal BFGS step
+   60   -2316.7321260332      1.75e-02  Line search: overstep
+   61   -2316.7321715034      1.14e-03   Normal BFGS step
+   62   -2316.7321667130      6.07e-03  Line search: overstep
+   63   -2316.7321756985      2.58e-03   Normal BFGS step
+   64   -2316.7321791539      1.91e-03   Normal BFGS step
+   65   -2316.7321816857      2.70e-03   Normal BFGS step
+   66   -2316.7321880233      1.61e-03   Normal BFGS step
+   67   -2316.7321890264      1.70e-03   Normal BFGS step
+   68   -2316.7321951997      9.08e-04   Normal BFGS step
+   69   -2316.7321931571      9.34e-04  Line search: overstep
+   70   -2316.7321970972      5.76e-04   Normal BFGS step
+   71   -2316.7321984404      1.36e-03   Normal BFGS step
+   72   -2316.7322003626      1.29e-03   Normal BFGS step
+   73   -2316.7322008836      1.39e-03   Normal BFGS step
+   74   -2316.7322031645      9.97e-04   Normal BFGS step
+   75   -2316.7322039006      6.77e-04   Normal BFGS step
+   76   -2316.7322056871      1.38e-03   Normal BFGS step
+   77   -2316.7322058737      8.43e-04   Normal BFGS step
+   78   -2316.7322064223      8.11e-04   Normal BFGS step
+   79   -2316.7322065846      6.13e-04   Normal BFGS step
+   80   -2316.7322068774      4.68e-04   Normal BFGS step
+   81   -2316.7322072093      7.84e-04   Normal BFGS step
+   82   -2316.7322070159      1.98e-03  Line search: overstep
+   83   -2316.7322074467      3.92e-04   Normal BFGS step
+   84   -2316.7322061425      1.54e-03  Line search: overstep
+   85   -2316.7322075917      2.47e-04   Normal BFGS step
+   86   -2316.7322075132      4.50e-04  Line search: overstep
+   87   -2316.7322076483      1.98e-04   Normal BFGS step
+   88   -2316.7322076809      1.53e-04   Normal BFGS step
+   89   -2316.7322077336      8.02e-05   Normal BFGS step
+   90   -2316.7322077493      1.53e-04   Normal BFGS step
+   91   -2316.7322077743      5.91e-05   Normal BFGS step
+   92   -2316.7322077729      1.14e-04   Normal BFGS step
+   93   -2316.7322077847      8.57e-05   Normal BFGS step
+   94   -2316.7322077881      5.94e-05   Normal BFGS step
+   95   -2316.7322077926      6.70e-05   Normal BFGS step
+   96   -2316.7322077916      9.93e-05   Normal BFGS step
+   97   -2316.7322077975      7.54e-05   Normal BFGS step
+   98   -2316.7322077939      8.74e-05   Normal BFGS step
+   99   -2316.7322077981      8.31e-05   Normal BFGS step
+  100   -2316.7322077949      5.94e-05   Normal BFGS step
+  101   -2316.7322078039      3.59e-05   Normal BFGS step
+  102   -2316.7322078044      2.36e-05   Normal BFGS step
+  103   -2316.7322078088      4.58e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  104   -2316.7322078029      1.93e-04   Normal BFGS step
+  105   -2316.7322078087      8.77e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  106   -2316.7322078027      4.75e-05   Normal BFGS step
+  107   -2316.7322078146      3.81e-05   Normal BFGS step
+  108   -2316.7322078130      6.41e-05   Normal BFGS step
+  109   -2316.7322078193      2.04e-05   Normal BFGS step
+  110   -2316.7322078213      3.51e-05   Normal BFGS step
+  111   -2316.7322078294      4.53e-05   Normal BFGS step
+  112   -2316.7322078400      6.77e-05   Normal BFGS step
+  113   -2316.7322078597      8.93e-05   Normal BFGS step
+  114   -2316.7322078607      8.37e-05   Normal BFGS step
+  115   -2316.7322078805      1.25e-04   Normal BFGS step
+  116   -2316.7322078563      2.81e-04  Line search: overstep
+  117   -2316.7322078920      5.96e-05   Normal BFGS step
+  118   -2316.7322078803      2.24e-04  Line search: overstep
+  119   -2316.7322078988      7.11e-05   Normal BFGS step
+  120   -2316.7322079061      1.01e-04   Normal BFGS step
+  121   -2316.7322079252      1.27e-04   Normal BFGS step
+  122   -2316.7322079442      1.29e-04   Normal BFGS step
+  123   -2316.7322079787      4.14e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  124   -2316.7322079736      1.36e-04   Normal BFGS step
+  125   -2316.7322079884      2.12e-04   Normal BFGS step
+  126   -2316.7322078804      6.58e-04  Line search: overstep
+  127   -2316.7322079948      5.51e-05   Normal BFGS step
+  128   -2316.7322079986      3.93e-05   Normal BFGS step
+  129   -2316.7322080064      8.31e-05   Normal BFGS step
+  130   -2316.7322080187      1.25e-04   Normal BFGS step
+  131   -2316.7322080447      8.84e-05   Normal BFGS step
+  132   -2316.7322080588      1.21e-04   Normal BFGS step
+  133   -2316.7322080639      5.62e-05   Normal BFGS step
+  134   -2316.7322080728      3.68e-05   Normal BFGS step
+  135   -2316.7322080733      3.64e-05   Normal BFGS step
+  136   -2316.7322080765      1.98e-05   Normal BFGS step
+  137   -2316.7322080768      2.42e-05   Normal BFGS step
+  138   -2316.7322080775      5.71e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  139   -2316.7322080749      6.10e-05   Normal BFGS step
+  140   -2316.7322080780      2.53e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  141   -2316.7322080753      5.34e-05   Normal BFGS step
+  142   -2316.7322080790      1.22e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  143   -2316.7322080784      1.42e-05   Normal BFGS step
+  144   -2316.7322080793      6.67e-06   Normal BFGS step
+  145   -2316.7322080791      1.19e-05   Normal BFGS step
+  146   -2316.7322080794      8.96e-06   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  147   -2316.7322080790      5.32e-05   Normal BFGS step
+  148   -2316.7322080794      1.45e-05   Normal BFGS step
+  149   -2316.7322080787      1.48e-05   Normal BFGS step
+  150   -2316.7322080795      3.23e-06   Normal BFGS step
+  151   -2316.7322080793      9.18e-06   Normal BFGS step
+  152   -2316.7322080795      2.12e-06   Normal BFGS step
+  153   -2316.7322080795      6.78e-06   Normal BFGS step
+  154   -2316.7322080795      1.13e-06   Normal BFGS step
+  155   -2316.7322080796      9.38e-07   Normal BFGS step
+  156   -2316.7322080796      1.65e-06   Normal BFGS step
+  157   -2316.7322080796      7.73e-07   Normal BFGS step
+  158   -2316.7322080796      2.48e-06   Normal BFGS step
+  159   -2316.7322080795      8.81e-06   Normal BFGS step
+  160   -2316.7322080796      4.23e-07   Normal BFGS step
+  161   -2316.7322080796      1.46e-06   Normal BFGS step
+  162   -2316.7322080796      5.91e-07   Normal BFGS step
+  163   -2316.7322080796      1.18e-06   Normal BFGS step
+  164   -2316.7322080796      2.21e-07   Normal BFGS step
+  165   -2316.7322080796      4.98e-07   Normal BFGS step
+  166   -2316.7322080796      1.01e-06   Normal BFGS step
+  167   -2316.7322080796      5.66e-06   Normal BFGS step
+  168   -2316.7322080796      5.91e-07   Normal BFGS step
+  169   -2316.7322080796      1.05e-06   Normal BFGS step
+  170   -2316.7322080796      1.60e-07   Normal BFGS step
+  171   -2316.7322080796      2.38e-07   Normal BFGS step
+  172   -2316.7322080796      1.57e-07   Normal BFGS step
+  173   -2316.7322080796      1.50e-07   Normal BFGS step
+  174   -2316.7322080796      1.35e-07   Normal BFGS step
+  175   -2316.7322080796      1.74e-07   Normal BFGS step
+  176   -2316.7322080796      3.92e-07   Normal BFGS step
+  177   -2316.7322080796      3.48e-07   Normal BFGS step
+  178   -2316.7322080796      5.51e-07   Normal BFGS step
+  179   -2316.7322080796      1.46e-06   Normal BFGS step
+  180   -2316.7322080796      8.89e-08   Normal BFGS step
+  181   -2316.7322080796      1.18e-07   Normal BFGS step
+  182   -2316.7322080796      7.47e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  183   -2316.7322080796      7.20e-08   Normal BFGS step
+  184   -2316.7322080796      5.63e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  185   -2316.7322080796      1.93e-07   Normal BFGS step
+  186   -2316.7322080796      7.73e-08   Normal BFGS step
+  187   -2316.7322080796      7.51e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  188   -2316.7322080796      1.20e-07   Normal BFGS step
+  189   -2316.7322080796      8.02e-07   Normal BFGS step
+  190   -2316.7322080796      5.57e-08   Normal BFGS step
+  191   -2316.7322080796      1.84e-07   Normal BFGS step
+  192   -2316.7322080796      2.93e-08   Normal BFGS step
+  193   -2316.7322080796      7.91e-08   Normal BFGS step
+  194   -2316.7322080796      2.16e-08   Normal BFGS step
+  195   -2316.7322080796      3.86e-08   Normal BFGS step
+  196   -2316.7322080796      2.10e-08   Normal BFGS step
+  197   -2316.7322080796      9.55e-08   Normal BFGS step
+  198   -2316.7322080796      6.11e-08   Normal BFGS step
+  199   -2316.7322080796      1.56e-07   Normal BFGS step
+  200   -2316.7322080796      1.61e-08   Normal BFGS step
+  201   -2316.7322080796      3.44e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  202   -2316.7322080796      1.09e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.16e-08
+  203   -2316.7322080796      1.44e-08   Normal BFGS step
+  204   -2316.7322080796      7.45e-09  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 4246.58s  wall 356.00s 
+<S^2> =          6.774133675
+ SCF   energy in the final basis set =    -2316.7322080796
+ Total energy in the final basis set =    -2316.7322080796
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+******* -29.796 -25.753 -25.752 -25.745 -19.114 -19.094 -14.284
+-14.279 -14.275 -14.271 -14.216 -14.206 -14.201 -14.199 -10.186
+-10.186 -10.172 -10.170 -10.169 -10.168 -10.150 -10.147 -10.146
+-10.142 -10.129 -10.127  -3.567  -2.394  -2.393  -2.374  -1.303
+ -1.126  -1.126  -1.120  -1.112  -0.988  -0.985  -0.984  -0.976
+ -0.919  -0.868  -0.864  -0.861  -0.856  -0.753  -0.753  -0.750
+ -0.744  -0.727  -0.724  -0.719  -0.716  -0.702  -0.700  -0.696
+ -0.694  -0.670  -0.630  -0.609  -0.597  -0.596  -0.594  -0.591
+ -0.588  -0.586  -0.585  -0.580  -0.578  -0.576  -0.575  -0.573
+ -0.570  -0.567  -0.557  -0.556  -0.499  -0.495  -0.495  -0.493
+ -0.462  -0.449  -0.447  -0.445  -0.439  -0.416  -0.412  -0.411
+ -0.402  -0.401  -0.396  -0.394  -0.394  -0.393
+ -- Virtual --
+ -0.383  -0.380  -0.220  -0.216  -0.211  -0.204  -0.200  -0.181
+ -0.172  -0.172  -0.162  -0.158  -0.146  -0.145  -0.144  -0.139
+ -0.115  -0.099  -0.097  -0.093  -0.081  -0.076  -0.071  -0.064
+ -0.060  -0.055  -0.050  -0.034  -0.024  -0.018  -0.012  -0.010
+ -0.007  -0.004  -0.000   0.006   0.021   0.041   0.051   0.056
+  0.081   0.090   0.100   0.105   0.107   0.134   0.136   0.147
+  0.156   0.173   0.185   0.192   0.198   0.198   0.210   0.213
+  0.225   0.227   0.246   0.250   0.258   0.267   0.273   0.283
+  0.285   0.298   0.300   0.304   0.308   0.313   0.318   0.323
+  0.326   0.336   0.342   0.347   0.358   0.374   0.382   0.402
+  0.407   0.412   0.424   0.430   0.435   0.438   0.445   0.455
+  0.456   0.463   0.472   0.475   0.483   0.488   0.496   0.503
+  0.510   0.511   0.516   0.524   0.532   0.536   0.543   0.546
+  0.546   0.552   0.568   0.574   0.588   0.589   0.592   0.606
+  0.616   0.621   0.630   0.633   0.633   0.635   0.637   0.641
+  0.643   0.644   0.647   0.653   0.659   0.665   0.674   0.694
+  0.736   0.744   0.749   0.756   0.764   0.802   0.816   0.820
+  0.827   0.828   0.836   0.846   0.903   0.911   0.931   0.936
+  0.945   1.004   1.018   1.020   1.021   1.026   1.034   1.045
+  1.060   1.217   1.234   1.251   1.264
+ 
+ Beta MOs
+ -- Occupied --
+******* -29.744 -25.713 -25.711 -25.709 -19.113 -19.100 -14.284
+-14.279 -14.275 -14.271 -14.211 -14.205 -14.201 -14.198 -10.184
+-10.184 -10.172 -10.169 -10.168 -10.167 -10.150 -10.147 -10.144
+-10.141 -10.129 -10.127  -3.444  -2.272  -2.268  -2.259  -1.309
+ -1.124  -1.123  -1.118  -1.111  -0.986  -0.984  -0.981  -0.975
+ -0.925  -0.862  -0.860  -0.859  -0.856  -0.752  -0.751  -0.748
+ -0.743  -0.724  -0.722  -0.717  -0.715  -0.700  -0.698  -0.695
+ -0.693  -0.672  -0.644  -0.606  -0.596  -0.595  -0.592  -0.590
+ -0.586  -0.585  -0.580  -0.578  -0.577  -0.574  -0.571  -0.571
+ -0.569  -0.565  -0.557  -0.556  -0.449  -0.447  -0.443  -0.443
+ -0.438  -0.423  -0.405  -0.401  -0.397  -0.394  -0.393  -0.391
+ -0.390  -0.389
+ -- Virtual --
+ -0.389  -0.389  -0.369  -0.365  -0.361  -0.346  -0.213  -0.210
+ -0.206  -0.204  -0.200  -0.177  -0.169  -0.164  -0.158  -0.157
+ -0.146  -0.145  -0.141  -0.138  -0.114  -0.098  -0.094  -0.092
+ -0.081  -0.075  -0.071  -0.063  -0.059  -0.054  -0.049  -0.033
+ -0.022  -0.016  -0.011  -0.008  -0.005  -0.003   0.002   0.009
+  0.023   0.042   0.054   0.057   0.083   0.091   0.101   0.106
+  0.108   0.137   0.137   0.148   0.159   0.175   0.187   0.193
+  0.199   0.200   0.211   0.219   0.228   0.228   0.247   0.251
+  0.259   0.273   0.274   0.284   0.288   0.299   0.302   0.306
+  0.310   0.315   0.319   0.325   0.327   0.338   0.343   0.351
+  0.361   0.377   0.385   0.404   0.412   0.415   0.430   0.432
+  0.439   0.447   0.453   0.456   0.458   0.464   0.473   0.476
+  0.484   0.490   0.497   0.504   0.511   0.513   0.517   0.525
+  0.533   0.544   0.546   0.547   0.553   0.562   0.569   0.575
+  0.586   0.589   0.593   0.607   0.619   0.624   0.635   0.636
+  0.637   0.640   0.643   0.648   0.652   0.658   0.661   0.667
+  0.676   0.682   0.695   0.709   0.736   0.744   0.757   0.765
+  0.772   0.803   0.821   0.837   0.839   0.846   0.847   0.847
+  0.904   0.912   0.933   0.937   0.949   1.006   1.020   1.022
+  1.022   1.027   1.036   1.046   1.061   1.218   1.235   1.251
+  1.265
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)    Spin (a.u.)
+  --------------------------------------------------------
+      1 O                    -0.300188       0.006146
+      2 O                     0.066863      -0.256065
+      3 Fe                    1.233325       3.249918
+      4 N                    -0.234206       0.010016
+      5 C                     0.123937       0.025767
+      6 N                    -0.312153       0.000947
+      7 C                     0.089052       0.041120
+      8 C                    -0.020142       0.024544
+      9 H                     0.078898      -0.000650
+     10 H                     0.088609      -0.000203
+     11 H                     0.095806      -0.000129
+     12 H                     0.230759      -0.000412
+     13 H                     0.103320      -0.006155
+     14 C                     0.000444       0.041155
+     15 H                     0.219262       0.000053
+     16 N                    -0.310427      -0.023931
+     17 C                    -0.062279       0.013984
+     18 C                     0.046465       0.041535
+     19 H                     0.108992      -0.004122
+     20 N                    -0.174490      -0.020744
+     21 H                     0.098307      -0.005793
+     22 H                     0.090536      -0.006542
+     23 C                     0.006727       0.062081
+     24 H                     0.243367       0.000229
+     25 N                    -0.309512      -0.025296
+     26 C                    -0.055886       0.029502
+     27 C                     0.096030       0.063441
+     28 H                     0.110495      -0.002427
+     29 N                    -0.075241       0.133906
+     30 H                     0.117333      -0.005340
+     31 H                     0.056305       0.004919
+     32 C                     0.063331       0.041810
+     33 H                     0.231519       0.002030
+     34 N                    -0.289468       0.018163
+     35 C                     0.037398       0.009425
+     36 C                     0.183411       0.000919
+     37 H                     0.092839       0.011326
+     38 N                     0.113249       0.516196
+     39 H                     0.117415       0.008677
+  --------------------------------------------------------
+  Sum of atomic charges =     2.000000
+  Sum of spin   charges =     4.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 9.6064
+    Dipole Moment (Debye)
+         X      39.3148      Y       0.1353      Z      -5.0785
+       Tot      39.6417
+    Quadrupole Moments (Debye-Ang)
+        XX     343.4441     XY     -71.9161     YY     -82.8870
+        XZ       6.2978     YZ      28.3679     ZZ    -117.3930
+    Octopole Moments (Debye-Ang^2)
+       XXX    4733.9762    XXY    -809.4618    XYY     152.2737
+       YYY      82.2328    XXZ     -89.7697    XYZ     -53.6387
+       YYZ      15.2282    XZZ     134.6675    YZZ      15.1276
+       ZZZ     -30.3838
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX   23875.2191   XXXY   -7137.0365   XXYY   -2829.5223
+      XYYY    -603.1590   YYYY   -3537.7157   XXXZ      57.1132
+      XXYZ     289.0735   XYYZ     -18.0054   YYYZ     174.8239
+      XXZZ   -3902.8440   XYZZ    -133.6544   YYZZ   -1150.2755
+      XZZZ     333.2146   YZZZ     268.8015   ZZZZ   -2767.6586
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3           4           5           6
+    1   0.0128891  -0.0030855  -0.0116246   0.0020521   0.0083943  -0.0088873
+    2   0.0545797  -0.0134332  -0.0406029  -0.0209788   0.0040357   0.0058541
+    3  -0.0086591   0.0022333   0.0062570  -0.0019891  -0.0032944  -0.0002071
+            7           8           9          10          11          12
+    1   0.0016187  -0.0055583  -0.0019184   0.0119221  -0.0061098  -0.0037225
+    2  -0.0086394   0.0086285   0.0135511  -0.0056765  -0.0018569   0.0045588
+    3   0.0013046  -0.0007535   0.0028786  -0.0015524   0.0020333   0.0048240
+           13          14          15          16          17          18
+    1   0.0074596   0.0014747  -0.0032331  -0.0075372   0.0026298   0.0036419
+    2   0.0087323   0.0028095  -0.0029956  -0.0078992   0.0021153   0.0045295
+    3   0.0161021  -0.0081422   0.0090778   0.0064253   0.0113569   0.0050094
+           19          20          21          22          23          24
+    1   0.0112890  -0.0047980  -0.0127654   0.0003530   0.0088389  -0.0100460
+    2   0.0130693  -0.0048214  -0.0131074   0.0062103   0.0043886  -0.0118006
+    3  -0.0108940  -0.0262704  -0.0032688   0.0229183  -0.0076598   0.0126778
+           25          26          27          28          29          30
+    1  -0.0098514  -0.0010849   0.0024348   0.0150576   0.0070629  -0.0088716
+    2  -0.0078484  -0.0010526   0.0067355   0.0178022   0.0004978  -0.0152589
+    3  -0.0018365   0.0114865   0.0067428  -0.0027294  -0.0313281  -0.0121286
+           31          32          33          34          35          36
+    1  -0.0048867   0.0025325   0.0010808  -0.0009499   0.0057221   0.0029543
+    2   0.0084218   0.0068214  -0.0001433  -0.0050359  -0.0078659  -0.0111625
+    3   0.0046994  -0.0117206  -0.0000136   0.0012020   0.0069522  -0.0154107
+           37          38          39
+    1  -0.0013923  -0.0048974   0.0018117
+    2  -0.0011271   0.0089211  -0.0009564
+    3  -0.0041878   0.0137460   0.0041189
+ Max gradient component =       5.458E-02
+ RMS gradient           =       1.083E-02
+ Gradient time:  CPU 37.12 s  wall 3.22 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+       39     742       0       0       0       0       0       0
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED INTERNAL COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   3
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  O        10.2428435262    0.6246778999   -0.4401075870
+      2  O        10.5180145127    1.8677544211   -0.6415112370
+      3  Fe        9.8261647239   -1.2142117536   -0.1475315279
+      4  N        -3.4922969354    1.7161591277   -2.9558594098
+      5  C        -2.2286194934    1.3128108773   -3.1771605456
+      6  N        -2.1948834626   -0.0779193743   -3.2619769690
+      7  C        -3.4954285541   -0.5596685526   -3.1086555655
+      8  C        -4.2905591050    0.5791218277   -2.9319203773
+      9  H        -3.8059336089   -1.5985501705   -3.1506288574
+     10  H        -5.3706192846    0.5893213106   -2.8166986174
+     11  H        -1.3715693296    1.9682637375   -3.3010513167
+     12  H        -1.3599446073   -0.6391281358   -3.4402451200
+     13  H        -3.1172390574   -4.0775894930   -1.0994258298
+     14  C        -2.6364880706   -3.5787460569   -0.2516323860
+     15  H        -1.3483369790   -2.1420689947   -1.2250975844
+     16  N        -1.6970474496   -2.5541488114   -0.3532187221
+     17  C        -2.7954281265   -3.8006311212    1.1420381496
+     18  C        -1.3178421555   -2.1956166050    0.9408542559
+     19  H        -3.4499125690   -4.5374636504    1.6175157299
+     20  N        -1.9728540959   -2.9370647960    1.8601243270
+     21  H        -0.5939534913   -1.4185619045    1.1779875063
+     22  H        -5.4316361745   -1.2897973675   -0.8124614076
+     23  C        -5.3781066442   -0.9691917717    0.2242632328
+     24  H        -3.9686866761    0.6377083613    0.1231857103
+     25  N        -4.5794153450    0.0614168136    0.6929460579
+     26  C        -6.0619209582   -1.4637029706    1.3672760196
+     27  C        -4.7773050488    0.1806479835    2.0659637371
+     28  H        -6.7756768956   -2.2831283191    1.4027598918
+     29  N        -5.6608367380   -0.7457667601    2.4641368806
+     30  H        -4.2947299420    0.9149969779    2.6947631377
+     31  H        -0.4319009188    1.2628598166    1.4320877910
+     32  C        -0.7546829626    2.2887432932    1.3944700690
+     33  H        -0.8733015757    2.6737580579   -0.7245286774
+     34  N        -0.9815873508    3.0129085010    0.2295076007
+     35  C        -1.0175256590    3.1375870412    2.4672137372
+     36  C        -1.3814473347    4.2849585846    0.6006282240
+     37  H        -0.9402980230    2.9305254359    3.5159394227
+     38  N        -1.3788371022    4.3205850275    1.9167028004
+     39  H        -1.6397639836    5.0770293681   -0.0719648665
+   Point Group: c1    Number of degrees of freedom:   111
+
+
+   Energy is  -2316.732208080
+
+ Hessian Updated using BFGS Update
+
+111 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000285    0.002246    0.002490    0.002528    0.002854    0.003697
+     0.005480    0.007628    0.008734    0.010565    0.011261    0.011634
+     0.013117    0.013186    0.013580    0.014544    0.014800    0.016110
+     0.016202    0.016263    0.017715    0.019809    0.020737    0.022787
+     0.022817    0.022844    0.023024    0.023156    0.023334    0.023614
+     0.023680    0.024134    0.024179    0.024699    0.024717    0.024908
+     0.025052    0.025857    0.028629    0.031949    0.033056    0.035473
+     0.037409    0.042642    0.046132    0.048670    0.050874    0.055134
+     0.062703    0.072534    0.074354    0.078269    0.094854    0.115488
+     0.119654    0.128961    0.132831    0.140832    0.148539    0.153036
+     0.155780    0.159886    0.159999    0.160000    0.160000    0.160000
+     0.160000    0.160329    0.162078    0.179052    0.216802    0.219874
+     0.221431    0.227929    0.236201    0.249747    0.266475    0.271677
+     0.334182    0.336445    0.339956    0.343473    0.355825    0.357769
+     0.357849    0.358167    0.358324    0.358954    0.383269    0.394739
+     0.396896    0.411515    0.414383    0.430715    0.448632    0.477270
+     0.482204    0.490603    0.506852    0.512659    0.518439    0.524943
+     0.539149    0.542932    0.551618    0.557532    0.560460    0.562861
+     0.710838    0.826213    1.301381
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.04361706
+ Calculated Step too Large.  Step scaled by  0.557907
+ Step Taken.  Stepsize is  0.300000
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.042382      0.000300      NO
+         Displacement       0.119111      0.001200      NO
+         Energy change     -0.022309      0.000001      NO
+
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+
+ Displacement from previous Coordinates is:  2.807110
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      O      10.3490422138     0.6169216758    -0.6282038701
+    2      O      10.6239038559     1.8760722198    -0.8467981013
+    3      Fe      9.9553127545    -1.1477878771    -0.3271619250
+    4      N      -3.4338174916     1.7512573036    -2.9207794664
+    5      C      -2.1739938216     1.3211584980    -3.1177850280
+    6      N      -2.1536913955    -0.0828599616    -3.2201724616
+    7      C      -3.4808774398    -0.5430804601    -3.1156888039
+    8      C      -4.2594471853     0.6180156690    -2.9424748430
+    9      H      -3.8073383709    -1.5842683395    -3.1983179786
+   10      H      -5.3526945706     0.6586255624    -2.8782968144
+   11      H      -1.3044040422     1.9678245323    -3.2340936859
+   12      H      -1.3221855828    -0.6525123741    -3.3957670047
+   13      H      -3.0072474781    -4.1273774227    -0.9965876769
+   14      C      -2.5115293994    -3.6112062999    -0.1432444855
+   15      H      -1.2430448169    -2.1519457682    -1.1605548839
+   16      N      -1.5710285496    -2.5625322649    -0.2733868527
+   17      C      -2.6391009605    -3.8213307328     1.2720400148
+   18      C      -1.1643481522    -2.1890786172     1.0267122766
+   19      H      -3.2827614146    -4.5697684361     1.7883279927
+   20      N      -1.7963186895    -2.9310598182     1.9750382953
+   21      H      -0.4316773218    -1.3953327797     1.2460346099
+   22      H      -5.6151078494    -1.3045569535    -0.9685352037
+   23      C      -5.6593930903    -1.0086789131     0.0983635005
+   24      H      -4.2370026863     0.6212861660     0.1546134211
+   25      N      -4.8956810988     0.0265998871     0.6655204316
+   26      C      -6.4511866523    -1.5298902657     1.1825065269
+   27      C      -5.2225050127     0.1141750307     2.0351928980
+   28      H      -7.1834428428    -2.3625351330     1.1476048592
+   29      N      -6.1491323691    -0.8216760404     2.3420463124
+   30      H      -4.7934258283     0.8510503111     2.7268774763
+   31      H      -0.2737200644     1.2922243305     1.4812541584
+   32      C      -0.6002603972     2.3211391879     1.4459700333
+   33      H      -0.7686038538     2.6982807732    -0.6760327609
+   34      N      -0.8562469501     3.0451019802     0.2720423683
+   35      C      -0.8403939739     3.1852510073     2.5118106107
+   36      C      -1.2523857910     4.3296794611     0.6365563618
+   37      H      -0.7409596893     3.0101323168     3.5607361581
+   38      N      -1.2046239933     4.3414788379     1.9288388895
+   39      H      -1.5282729441     5.1100815622    -0.0355176715
+ ----------------------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =  1740.1676367696 hartrees
+ There are       94 alpha and       90 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-12
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =     0.0000000258 hartrees
+ Requested basis set is VDZ
+ There are 151 shells and 251 basis functions
+ A cutoff of  1.0D-12 yielded   7046 shell pairs
+ There are     18784 function pairs (     18874 Cartesian)
+ Smallest overlap matrix eigenvalue = 2.11E-03
+ Guess MOs from SCF MO coefficient file
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+ Exchange:  B88      Correlation:  LYP
+ Using SG-1 standard quadrature grid
+ using 12 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A unrestricted SCF calculation will be
+ performed using DIIS, GDM
+ SCF converges when RMS gradient is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1   -2316.6717930263      9.89e-04  
+    2   -2302.7488620329      1.23e-02  
+    3   -2316.4578417506      2.80e-03  Done DIIS. Switching to GDM
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -2316.4578417506      7.26e-01   Descent step
+    2   -2316.5981131486      4.40e-01   Descent step
+    3   -2316.5668593728      6.27e-01  Line search: overstep
+    4   -2316.6810001857      1.73e-01   Normal BFGS step
+    5   -2316.6645255183      3.64e-01  Line search: overstep
+    6   -2316.7029787683      3.23e-02   Normal BFGS step
+    7   -2316.7010210732      5.88e-02  Line search: overstep
+    8   -2316.7084428769      2.17e-02   Normal BFGS step
+    9   -2316.7051152137      4.42e-02  Line search: overstep
+   10   -2316.7102386183      2.25e-02   Normal BFGS step
+   11   -2316.7108686577      1.47e-02   Normal BFGS step
+   12   -2316.7118727720      2.71e-02   Normal BFGS step
+   13   -2316.7094631522      1.22e-01  Line search: overstep
+   14   -2316.7137227537      5.14e-02   Dog-leg BFGS step
+   15   -2316.6885927993      2.66e-01  Line search: overstep
+   16   -2316.7159115484      6.96e-02   Normal BFGS step
+   17   -2316.6714664160      3.50e-01  Line search: overstep
+   18   -2316.7187371477      5.23e-02   Normal BFGS step
+   19   -2316.7212525592      5.66e-02   Normal BFGS step
+   20   -2316.7232931256      3.80e-02   Normal BFGS step
+   21   -2316.7249319656      5.89e-02   Normal BFGS step
+   22   -2316.7248127029      8.30e-02  Line search: overstep
+   23   -2316.7266567959      4.47e-02   Normal BFGS step
+   24   -2316.7264236740      8.88e-02  Line search: overstep
+   25   -2316.7276238820      3.12e-02   Normal BFGS step
+   26   -2316.7280337579      1.71e-02   Normal BFGS step
+   27   -2316.7284780917      9.10e-03   Normal BFGS step
+   28   -2316.7283785365      1.70e-02  Line search: overstep
+   29   -2316.7286018058      4.23e-03   Normal BFGS step
+   30   -2316.7286359738      2.74e-03   Normal BFGS step
+   31   -2316.7286504147      7.14e-03   Normal BFGS step
+   32   -2316.7285919916      2.68e-02  Line search: overstep
+   33   -2316.7286640857      3.59e-03   Normal BFGS step
+   34   -2316.7286977588      7.78e-03   Normal BFGS step
+   35   -2316.7288560890      1.36e-02  Line search: understep
+   36   -2316.7171367305      2.33e-01  Line search: overstep
+   37   -2316.7289855697      2.33e-02   Dog-leg BFGS step
+   38   -2316.6534874045      7.92e-01  Line search: overstep
+   39   -2316.7293720653      2.86e-02   Dog-leg BFGS step
+   40   -2316.6445935443      4.43e-01  Line search: overstep
+   41   -2316.7297972468      5.12e-02   Normal BFGS step
+   42   -2316.7204232789      2.64e-01  Line search: overstep
+   43   -2316.7299634908      3.73e-02   Normal BFGS step
+   44   -2316.7303429205      1.69e-02   Normal BFGS step
+   45   -2316.7308940614      2.94e-02   Normal BFGS step
+   46   -2316.7310927426      1.16e-02   Normal BFGS step
+   47   -2316.7313224205      5.20e-03   Normal BFGS step
+   48   -2316.7312896301      2.31e-02  Line search: overstep
+   49   -2316.7314577359      1.04e-02   Normal BFGS step
+   50   -2316.7316029482      1.56e-02   Normal BFGS step
+   51   -2316.7317436220      2.90e-02   Normal BFGS step
+   52   -2316.7319462497      9.15e-03   Normal BFGS step
+   53   -2316.7320627353      4.92e-03   Normal BFGS step
+   54   -2316.7322562364      1.43e-02   Normal BFGS step
+   55   -2316.7320748707      2.57e-02  Line search: overstep
+   56   -2316.7323312941      5.07e-03   Normal BFGS step
+   57   -2316.7323637618      5.81e-03   Normal BFGS step
+   58   -2316.7321989825      4.01e-02  Line search: overstep
+   59   -2316.7323931925      1.43e-02   Normal BFGS step
+   60   -2316.7323657576      1.27e-02  Line search: overstep
+   61   -2316.7324513272      2.47e-03   Normal BFGS step
+   62   -2316.7324709416      6.20e-03   Normal BFGS step
+   63   -2316.7325159380      2.52e-03   Normal BFGS step
+   64   -2316.7325315764      4.51e-03   Normal BFGS step
+   65   -2316.7325525789      7.93e-03   Normal BFGS step
+   66   -2316.7323977603      3.70e-02  Line search: overstep
+   67   -2316.7325657244      4.21e-03   Normal BFGS step
+   68   -2316.7325706831      3.16e-03   Normal BFGS step
+   69   -2316.7325939707      1.87e-03   Normal BFGS step
+   70   -2316.7325997129      2.07e-03   Normal BFGS step
+   71   -2316.7326174135      1.80e-03   Normal BFGS step
+   72   -2316.7326203236      3.21e-03   Normal BFGS step
+   73   -2316.7326371223      1.57e-03   Normal BFGS step
+   74   -2316.7326431262      2.64e-03   Normal BFGS step
+   75   -2316.7326558809      1.55e-03   Normal BFGS step
+   76   -2316.7326623537      1.34e-03   Normal BFGS step
+   77   -2316.7326653253      3.17e-03   Normal BFGS step
+   78   -2316.7326704267      2.44e-03   Normal BFGS step
+   79   -2316.7326713496      1.40e-03   Normal BFGS step
+   80   -2316.7326781703      1.25e-03   Normal BFGS step
+   81   -2316.7326719080      3.87e-03  Line search: overstep
+   82   -2316.7326803003      1.22e-03   Normal BFGS step
+   83   -2316.7326816524      1.48e-03   Normal BFGS step
+   84   -2316.7326848292      2.49e-03   Normal BFGS step
+   85   -2316.7326869824      8.27e-04   Normal BFGS step
+   86   -2316.7326880543      1.34e-03   Normal BFGS step
+   87   -2316.7326867960      4.10e-03  Line search: overstep
+   88   -2316.7326890466      8.21e-04   Normal BFGS step
+   89   -2316.7326842571      2.74e-03  Line search: overstep
+   90   -2316.7326897880      3.72e-04   Normal BFGS step
+   91   -2316.7326899045      6.29e-04   Normal BFGS step
+   92   -2316.7326906675      3.65e-04   Normal BFGS step
+   93   -2316.7326907000      7.90e-04   Normal BFGS step
+   94   -2316.7326910621      8.93e-04   Normal BFGS step
+   95   -2316.7326904986      1.54e-03  Line search: overstep
+   96   -2316.7326913587      4.06e-04   Normal BFGS step
+   97   -2316.7326913715      2.49e-04   Normal BFGS step
+   98   -2316.7326916049      2.85e-04   Normal BFGS step
+   99   -2316.7326916309      1.49e-04   Normal BFGS step
+  100   -2316.7326917341      1.30e-04   Normal BFGS step
+  101   -2316.7326917486      1.04e-04   Normal BFGS step
+  102   -2316.7326918066      1.24e-04   Normal BFGS step
+  103   -2316.7326918155      1.26e-04   Normal BFGS step
+  104   -2316.7326918385      8.74e-05   Normal BFGS step
+  105   -2316.7326918321      2.45e-04  Line search: overstep
+  106   -2316.7326918458      5.73e-05   Normal BFGS step
+  107   -2316.7326918382      1.11e-04  Line search: overstep
+  108   -2316.7326918512      3.06e-05   Normal BFGS step
+  109   -2316.7326918614      5.42e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  110   -2316.7326918576      1.90e-04   Normal BFGS step
+  111   -2316.7326918462      3.22e-04  Line search: overstep
+  112   -2316.7326918668      5.80e-05   Normal BFGS step
+  113   -2316.7326918525      1.77e-04  Line search: overstep
+  114   -2316.7326918747      3.92e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  115   -2316.7326918716      1.37e-04   Normal BFGS step
+  116   -2316.7326918820      3.69e-05   Normal BFGS step
+  117   -2316.7326918848      4.46e-05   Normal BFGS step
+  118   -2316.7326918925      5.42e-05   Normal BFGS step
+  119   -2316.7326919033      1.69e-04   Normal BFGS step
+  120   -2316.7326919169      1.46e-04   Normal BFGS step
+  121   -2316.7326919375      1.42e-04   Normal BFGS step
+  122   -2316.7326919819      5.52e-05   Normal BFGS step
+  123   -2316.7326920408      6.77e-05   Normal BFGS step
+  124   -2316.7326921439      1.70e-04   Normal BFGS step
+  125   -2316.7326922452      3.58e-04   Normal BFGS step
+  126   -2316.7326923423      1.63e-04   Normal BFGS step
+  127   -2316.7326924200      2.49e-04   Normal BFGS step
+  128   -2316.7326925108      1.24e-04   Normal BFGS step
+  129   -2316.7326925279      3.29e-04   Normal BFGS step
+  130   -2316.7326925824      7.40e-04   Normal BFGS step
+  131   -2316.7326922806      1.27e-03  Line search: overstep
+  132   -2316.7326926442      1.94e-04   Normal BFGS step
+  133   -2316.7326924697      3.38e-04  Line search: overstep
+  134   -2316.7326926764      1.68e-04   Normal BFGS step
+  135   -2316.7326926805      2.28e-04   Normal BFGS step
+  136   -2316.7326926941      7.16e-05   Normal BFGS step
+  137   -2316.7326926960      6.31e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  138   -2316.7326926931      1.24e-04   Normal BFGS step
+  139   -2316.7326927005      6.23e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  140   -2316.7326926982      8.15e-05   Normal BFGS step
+  141   -2316.7326927025      3.55e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  142   -2316.7326926950      1.17e-04   Normal BFGS step
+  143   -2316.7326927035      4.96e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  144   -2316.7326926992      3.67e-05   Normal BFGS step
+  145   -2316.7326927053      9.28e-06   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  146   -2316.7326927047      2.00e-05   Normal BFGS step
+  147   -2316.7326927058      7.01e-06   Normal BFGS step
+  148   -2316.7326927060      6.02e-06   Normal BFGS step
+  149   -2316.7326927063      4.26e-06   Normal BFGS step
+  150   -2316.7326927064      1.03e-05   Normal BFGS step
+  151   -2316.7326927067      1.64e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  152   -2316.7326927058      7.24e-05   Normal BFGS step
+  153   -2316.7326927067      1.11e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  154   -2316.7326927060      1.49e-05   Normal BFGS step
+  155   -2316.7326927068      8.06e-06   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 7.89e-09
+  156   -2316.7326927065      1.74e-05   Normal BFGS step
+  157   -2316.7326927069      6.49e-06   Normal BFGS step
+  158   -2316.7326927065      2.24e-05   Normal BFGS step
+  159   -2316.7326927069      3.13e-06   Normal BFGS step
