@@ -1,0 +1,28 @@
+#!/bin/tcsh -f
+#$ -cwd
+#$ -o car_2_diox_opt_631g_gga.job.o$JOB_ID
+#$ -q cubs.q
+#$ -j y
+#$ -N q-car_2_diox_opt_631g_gga
+#$ -pe shared 8
+
+
+setenv QC /usr/software/qchem_511
+source /usr/software/qchem_511/MGCF_qcenv.csh
+
+cd $SGE_O_WORKDIR
+/bin/hostname
+
+set echo
+setenv PATH /usr/software/nbo6_g16/bin:${PATH}
+setenv NBOEXE /usr/software/nbo6_g16/bin/nbo6.i8.exe
+awk '{ print $1 }' $PE_HOSTFILE > car_2_diox_opt_631g_gga.nodes
+setenv QCMACHINEFILE car_2_diox_opt_631g_gga.nodes
+setenv QCSCRATCH $SGE_O_WORKDIR/$JOB_ID
+/bin/mkdir -p $QCSCRATCH
+setenv QCLOCALSCR /scr/$USER/$JOB_ID
+/bin/mkdir -p $QCLOCALSCR
+/usr/bin/env
+
+/usr/software/qchem_511/bin/qchem -nt 8 car_2_diox_opt_631g_gga.in car_2_diox_opt_631g_gga.out
+
