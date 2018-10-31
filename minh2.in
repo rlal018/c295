@@ -6,5 +6,5 @@ $end
 
 $rem 
 BASIS = 6-31G* !
- METHOD  HF
+METHOD  HF
 $end
