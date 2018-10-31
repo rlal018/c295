@@ -381,3 +381,21 @@ $end
    40   -2555.2377809733      1.80e-02  
    41   -2565.6947974033      1.69e-02  
    42   -2565.6568050003      1.70e-02  
+   43   -2563.3489958856      1.73e-02  
+   44   -2563.9152578292      1.75e-02  
+   45   -2564.5590647979      1.69e-02  
+   46   -2565.8905592652      1.74e-02  
+   47   -2565.9383667140      1.74e-02  
+   48   -2565.9654751424      1.69e-02  
+   49   -2560.4035259042      1.74e-02  
+   50   -2554.5811199377      1.83e-02  
+gen_scfman_exception: SCF failed to converge
+
+ Q-Chem fatal error occurred in module libgscf/gen_scfman/gen_scfman_main.C, line 142:
+
+ Error in gen_scfman
+
+
+ Please submit a crash report at q-chem.com/reporter 
+ 
+ 
