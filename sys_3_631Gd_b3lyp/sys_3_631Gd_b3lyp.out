@@ -1,7 +1,7 @@
 
 Running Job 1 of 1 sys_3_631Gd_b3lyp.in
-qchem sys_3_631Gd_b3lyp.in_10510.0 /scr/c295_lal/137047/qchem10510/ 1
-/usr/software/qchem_511/exe/qcprog.exe_s sys_3_631Gd_b3lyp.in_10510.0 /scr/c295_lal/137047/qchem10510/
+qchem sys_3_631Gd_b3lyp.in_10960.0 /scr/c295_lal/137048/qchem10960/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s sys_3_631Gd_b3lyp.in_10960.0 /scr/c295_lal/137048/qchem10960/
 Check license passed
 
                   Welcome to Q-Chem
@@ -73,12 +73,12 @@ Check license passed
  Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
  http://arma.sourceforge.net/
 
- Q-Chem begins on Wed Oct 31 13:47:36 2018  
+ Q-Chem begins on Wed Oct 31 13:54:51 2018  
 
-Host: cub-0-8.local
+Host: cub-0-10.local
 0
 
-     Scratch files written to /scr/c295_lal/137047/qchem10510//
+     Scratch files written to /scr/c295_lal/137048/qchem10960//
  Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
 Processing $rem in /usr/software/qchem_511/config/preferences.
  MEM_TOTAL  2000 
