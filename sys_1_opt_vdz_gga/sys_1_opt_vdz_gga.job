@@ -4,7 +4,7 @@
 #$ -q cubs.q
 #$ -j y
 #$ -N q-sys_1_opt_vdz_gga
-#$ -pe shared 12
+#$ -pe shared 8
 
 
 setenv QC /usr/software/qchem_511
@@ -24,5 +24,5 @@ setenv QCLOCALSCR /scr/$USER/$JOB_ID
 /bin/mkdir -p $QCLOCALSCR
 /usr/bin/env
 
-/usr/software/qchem_511/bin/qchem -nt 12 sys_1_opt_vdz_gga.in sys_1_opt_vdz_gga.out
+/usr/software/qchem_511/bin/qchem -nt 8 sys_1_opt_vdz_gga.in sys_1_opt_vdz_gga.out
 
