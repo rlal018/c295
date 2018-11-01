@@ -161,3 +161,6 @@ cub-0-8.local
 # env setting
 #
 exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+remove work dirs /scr/c295_lal/137165/qchem10923.0 -- /scr/c295_lal/137165/qchem10923.0
+rm -rf /scr/c295_lal/137165/qchem10923.0
+rm -rf /scr/c295_lal/137165/qchem10923
