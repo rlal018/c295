@@ -45,7 +45,7 @@ H         -4.72002        3.20227       -0.74899
 $end
 
 $rem
-BASIS = 6-31G(d,p)
+BASIS = 6-31G
 METHOD  = B3LYP
 JOBTYPE = OPT
 $end
