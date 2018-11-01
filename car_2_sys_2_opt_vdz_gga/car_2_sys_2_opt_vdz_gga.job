@@ -4,7 +4,7 @@
 #$ -q cubs.q
 #$ -j y
 #$ -N q-car_2_sys_2_opt_vdz_gga
-#$ -pe shared 8
+#$ -pe shared 12
 
 
 setenv QC /usr/software/qchem_511
@@ -24,5 +24,5 @@ setenv QCLOCALSCR /scr/$USER/$JOB_ID
 /bin/mkdir -p $QCLOCALSCR
 /usr/bin/env
 
-/usr/software/qchem_511/bin/qchem -nt 8 car_2_sys_2_opt_vdz_gga.in car_2_sys_2_opt_vdz_gga.out
+/usr/software/qchem_511/bin/qchem -nt 12 car_2_sys_2_opt_vdz_gga.in car_2_sys_2_opt_vdz_gga.out
 

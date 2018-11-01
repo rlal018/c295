@@ -1,7 +1,7 @@
 
 Running Job 1 of 1 car_3_sys_2_opt_vdz_gga.in
-qchem car_3_sys_2_opt_vdz_gga.in_9089.0 /scr/c295_lal/137107/qchem9089/ 1
-/usr/software/qchem_511/exe/qcprog.exe_s car_3_sys_2_opt_vdz_gga.in_9089.0 /scr/c295_lal/137107/qchem9089/
+qchem car_3_sys_2_opt_vdz_gga.in_11368.0 /scr/c295_lal/137166/qchem11368/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s car_3_sys_2_opt_vdz_gga.in_11368.0 /scr/c295_lal/137166/qchem11368/
 Check license passed
 
                   Welcome to Q-Chem
@@ -73,12 +73,12 @@ Check license passed
  Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
  http://arma.sourceforge.net/
 
- Q-Chem begins on Wed Oct 31 16:29:36 2018  
+ Q-Chem begins on Wed Oct 31 17:47:21 2018  
 
-Host: cub-0-17.local
+Host: cub-0-10.local
 0
 
-     Scratch files written to /scr/c295_lal/137107/qchem9089//
+     Scratch files written to /scr/c295_lal/137166/qchem11368//
  Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
 Processing $rem in /usr/software/qchem_511/config/preferences.
  MEM_TOTAL  2000 
@@ -175,6 +175,8 @@ $rem
 BASIS = VDZ
 METHOD  = BLYP
 JOBTYPE = OPT
+MAX_SCF_CYCLES = 500
+SCF_ALGORITHM = DIIS_GDM
 $end
 --------------------------------------------------------------
  ----------------------------------------------------------------
@@ -268,8 +270,8 @@ $end
  Total QAlloc Memory Limit   2000 MB
  Mega-Array Size       188 MB
  MEM_STATIC part       192 MB
- A cutoff of  1.0D-11 yielded  13832 shell pairs
- There are     34072 function pairs (     34432 Cartesian)
+ A cutoff of  1.0D-12 yielded  14566 shell pairs
+ There are     36090 function pairs (     36476 Cartesian)
  
  -------------------------------------------------------
  OpenMP Integral Computing Module                       
@@ -298,13 +300,13 @@ $end
  number of shells is                        258
  number of basis is                         404
  number of cartesian basis is               404
- number of contracted shell pairs         13832
- number of primitive shell pairs          37975
+ number of contracted shell pairs         14566
+ number of primitive shell pairs          40150
  maxK2 (contraction) of shell pair           36
  max number of K2 of shell pair               1
- max number of CS2 of shell pair           3496
- max number of PS2 of shell pair           8005
- mem total for path MDJ                  635300
+ max number of CS2 of shell pair           3617
+ max number of PS2 of shell pair           8430
+ mem total for path MDJ                  643946
  -------------------------------------------------------
  Smallest overlap matrix eigenvalue = 8.44E-04
 
@@ -334,68 +336,30 @@ $end
  Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
  -------------------------------------------------------
  A unrestricted SCF calculation will be
- performed using DIIS
- SCF converges when DIIS error is below 1.0e-08
+ performed using DIIS, GDM
+ SCF converges when RMS gradient is below 1.0e-08
  ---------------------------------------
   Cycle       Energy         DIIS error
  ---------------------------------------
-    1   -2623.1655095073      2.28e-02  
-    2   -2615.3414660983      4.26e-03  
-    3   -2549.6850283278      1.71e-02  
-    4   -2593.3231335132      1.16e-02  
-    5   -2605.1301331257      7.98e-03  
-    6   -2612.0103574020      6.29e-03  
-    7   -2612.4183215532      7.43e-03  
-    8   -2607.7858209792      8.27e-03  
-    9   -2609.4942156567      7.95e-03  
-   10   -2609.2321481388      8.08e-03  
-   11   -2608.7066245367      8.20e-03  
-   12   -2608.6925606209      8.20e-03  
-   13   -2609.1962909161      8.09e-03  
-   14   -2609.1758278630      8.09e-03  
-   15   -2608.4064372508      8.19e-03  
-   16   -2608.4154267603      8.20e-03  
-   17   -2607.9183154292      8.19e-03  
-   18   -2604.8143260696      9.36e-03  
-   19   -2605.4036688646      9.15e-03  
-   20   -2605.4212237998      8.76e-03  
-   21   -2604.4675379712      9.25e-03  
-   22   -2485.5559936321      1.66e-02  
-   23   -2598.4544462092      1.14e-02  
-   24   -2596.9675814247      1.05e-02  
-   25   -2565.6183591419      1.37e-02  
-   26   -2546.4263821028      1.51e-02  
-   27   -2551.1980388825      1.49e-02  
-   28   -2552.7187866639      1.47e-02  
-   29   -2542.8186284978      1.53e-02  
-   30   -2576.7591326650      1.28e-02  
-   31   -2569.7365291838      1.36e-02  
-   32   -2565.0930430145      1.37e-02  
-   33   -2565.6426843113      1.29e-02  
-   34   -2597.2048561942      1.06e-02  
-   35   -2599.7948240682      1.03e-02  
-   36   -2587.3896165008      1.23e-02  
-   37   -2573.8239712221      1.61e-02  
-   38   -1546.9681483932      4.36e-02  
-   39   -2437.1845190100      1.81e-02  
-   40   -2555.2377809733      1.80e-02  
-   41   -2565.6947974033      1.69e-02  
-   42   -2565.6568050003      1.70e-02  
-   43   -2563.3489958856      1.73e-02  
-   44   -2563.9152578292      1.75e-02  
-   45   -2564.5590647979      1.69e-02  
-   46   -2565.8905592652      1.74e-02  
-   47   -2565.9383667140      1.74e-02  
-   48   -2565.9654751424      1.69e-02  
-   49   -2560.4035259042      1.74e-02  
-   50   -2554.5811199377      1.83e-02  
-gen_scfman_exception: SCF failed to converge
-
- Q-Chem fatal error occurred in module libgscf/gen_scfman/gen_scfman_main.C, line 142:
-
- Error in gen_scfman
-
-
- Please submit a crash report at q-chem.com/reporter 
- 
- 
+    1   -2623.1653506742      2.28e-02  
+    2   -2615.3411636518      4.26e-03  Done DIIS. Switching to GDM
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -2615.3411636518      1.10e+00   Descent step
+    2   -2615.9306182837      8.26e-01   Descent step
+    3   -2616.5454232752      2.61e-01   Descent step
+    4   -2616.9312878545      1.68e-01   Descent step
+    5   -2617.0574861684      7.11e-01   Descent step
+    6   -2616.8392611966      2.23e+00  Line search: overstep
+    7   -2617.1311418113      1.91e-01   Descent step
+    8   -2617.0029033436      1.27e+00  Line search: overstep
+    9   -2617.1587576472      5.25e-01   Descent step
+   10   -2616.5774742768      2.92e+00  Line search: overstep
+   11   -2617.1832521935      1.80e-01   Descent step
+   12   -2616.9618397317      1.15e+00  Line search: overstep
+   13   -2617.2065110332      4.55e-01   Descent step
+   14   -2616.7528068213      1.79e+00  Line search: overstep
+   15   -2617.2272414500      2.15e-01   Descent step
+   16   -2616.8451108336      1.68e+00  Line search: overstep
+   17   -2617.2471560546      3.36e-01   Descent step
