@@ -46,6 +46,6 @@ $end
 
 $rem
 BASIS = 6-31G(d,p)
-METHOD  = BLYP
+METHOD  = B3LYP
 JOBTYPE = OPT
 $end
