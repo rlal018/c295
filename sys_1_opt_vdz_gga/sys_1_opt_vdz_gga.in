@@ -34,7 +34,7 @@ H         -2.13309        1.22829        2.09255
 $end
 
 $rem
-BASIS = STO-3G
+BASIS = VDZ
 METHOD  = B3LYP
 JOBTYPE = OPT
 MAX_SCF_CYCLES = 500
