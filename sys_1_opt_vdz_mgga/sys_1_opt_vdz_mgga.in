@@ -1,5 +1,5 @@
 $molecule
-/295project/testqchem/c295/sys_1_opt_vdz_gga/sys_1_opt_vdz_gga.out
+read /295project/testqchem/c295/sys_1_opt_vdz_gga/sys_1_opt_vdz_gga.out
 $end
 
 $rem
