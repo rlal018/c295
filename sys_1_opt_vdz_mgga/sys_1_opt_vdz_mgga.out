@@ -1,7 +1,7 @@
 
 Running Job 1 of 1 sys_1_opt_vdz_mgga.in
-qchem sys_1_opt_vdz_mgga.in_11341.0 /scr/c295_lal/152683/qchem11341/ 1
-/usr/software/qchem_511/exe/qcprog.exe_s sys_1_opt_vdz_mgga.in_11341.0 /scr/c295_lal/152683/qchem11341/
+qchem sys_1_opt_vdz_mgga.in_7864.0 /scr/c295_lal/152686/qchem7864/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s sys_1_opt_vdz_mgga.in_7864.0 /scr/c295_lal/152686/qchem7864/
 Check license passed
 
                   Welcome to Q-Chem
@@ -73,21 +73,80 @@ Check license passed
  Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
  http://arma.sourceforge.net/
 
- Q-Chem begins on Wed Nov 21 10:16:44 2018  
+ Q-Chem begins on Wed Nov 21 10:36:44 2018  
 
-Host: cub-0-14.local
+Host: cub-0-22.local
 0
 
-     Scratch files written to /scr/c295_lal/152683/qchem11341//
+     Scratch files written to /scr/c295_lal/152686/qchem7864//
  Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
 Processing $rem in /usr/software/qchem_511/config/preferences.
  MEM_TOTAL  2000 
+Input Ideriv = 2
+Curr. Ideriv = -1
+Max.  Ideriv = 2
+Input Ideriv = 1
+Curr. Ideriv = 2
+Max.  Ideriv = 1
 
- Q-Chem fatal error occurred in module qparser/MoleculeInput.C, line 69:
+Checking the input file for inconsistencies... 	...done.
 
- Could not find $molecule section in MoleculeInput::read
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+2 5
+1  O         1.8024045420   -0.3540785706    1.5449646192
+2  O         2.6477624616   -1.2129287315    1.9307049721
+3  Fe        0.4671015415   -0.2476931575    0.1327310220
+4  N         1.7576967879    0.6373182592   -1.0433744818
+5  C         2.8473697766    1.3605740175   -0.6876760631
+6  N         3.5099788546    1.7396388496   -1.8055326096
+7  C         2.8474553842    1.2497185659   -2.9280154066
+8  C         1.7527518406    0.5658015265   -2.4516157583
+9  H         3.2026023370    1.4168656871   -3.9424193548
+10  H         1.0015678567    0.0201788421   -3.0177940847
+11  H         3.1552915561    1.6167621731    0.3238148378
+12  H         4.3654565690    2.2965962687   -1.8235064065
+13  H        -2.3137677644   -4.4322213094    1.4034214348
+14  C        -1.7785129731   -3.4867046123    1.4468738268
+15  H        -1.9409771722   -3.0636121656    3.5486486481
+16  N        -1.5922824367   -2.7799299405    2.6324875632
+17  C        -1.1607976690   -2.7482250083    0.4637703990
+18  C        -0.8792254258   -1.6577472420    2.3808214324
+19  H        -1.0753655118   -2.9679250547   -0.5968892706
+20  N        -0.5984975314   -1.6015523177    1.0561114684
+21  H        -0.5975754829   -0.9300815981    3.1393550800
+22  H        -1.4929658849   -0.4960368400   -2.5733937542
+23  C        -1.8916822300   -0.1303705871   -1.6288424274
+24  H        -0.6757336467    1.5530844409   -1.2271523752
+25  N        -1.1142929717    0.7454379966   -0.7546439995
+26  C        -3.1110101190   -0.2972310304   -1.0468893277
+27  C        -2.0796146614    1.0979325928    0.3023000018
+28  H        -3.9579729956   -0.8887813309   -1.3896009623
+29  N        -3.1993109402    0.4662299122    0.1522373282
+30  H        -1.8295363558    1.8170710870    1.0838772303
 
+$end
 
- Please submit a crash report at q-chem.com/reporter 
+$rem
+BASIS = VDZ
+METHOD  = B97M-rV
+JOBTYPE = OPT
+MAX_SCF_CYCLES = 500
+SCF_ALGORITHM = DIIS_GDM
+$end
+--------------------------------------------------------------
+
+ Q-Chem warning in module 0, line   82:
+
+ DnD slipped through
+
  
- 
+ D(1),D(2),D(3)  3.055553964501729E+090  1.631153236536261E+137
+  1.631153236536261E+137
+
+ Q-Chem fatal error occurred in module 0, line  159:
+
+ Bad NumAbl in SNOasy
+
