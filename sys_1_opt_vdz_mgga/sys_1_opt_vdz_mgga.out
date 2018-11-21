@@ -1,7 +1,7 @@
 
 Running Job 1 of 1 sys_1_opt_vdz_mgga.in
-qchem sys_1_opt_vdz_mgga.in_5402.0 /scr/c295_lal/152682/qchem5402/ 1
-/usr/software/qchem_511/exe/qcprog.exe_s sys_1_opt_vdz_mgga.in_5402.0 /scr/c295_lal/152682/qchem5402/
+qchem sys_1_opt_vdz_mgga.in_11341.0 /scr/c295_lal/152683/qchem11341/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s sys_1_opt_vdz_mgga.in_11341.0 /scr/c295_lal/152683/qchem11341/
 Check license passed
 
                   Welcome to Q-Chem
@@ -73,22 +73,19 @@ Check license passed
  Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
  http://arma.sourceforge.net/
 
- Q-Chem begins on Wed Nov 21 10:10:59 2018  
+ Q-Chem begins on Wed Nov 21 10:16:44 2018  
 
-Host: cub-0-9.local
+Host: cub-0-14.local
 0
 
-     Scratch files written to /scr/c295_lal/152682/qchem5402//
+     Scratch files written to /scr/c295_lal/152683/qchem11341//
  Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
 Processing $rem in /usr/software/qchem_511/config/preferences.
  MEM_TOTAL  2000 
 
-Input line:
-/295project/testqchem/c295/sys_1_opt_vdz_gga/sys_1_opt_vdz_gga.out
+ Q-Chem fatal error occurred in module qparser/MoleculeInput.C, line 69:
 
- Q-Chem fatal error occurred in module qparser/MoleculeInput.C, line 285:
-
- Should be exactly two non-comment tokens on charge and multiplicity line
+ Could not find $molecule section in MoleculeInput::read
 
 
  Please submit a crash report at q-chem.com/reporter 
