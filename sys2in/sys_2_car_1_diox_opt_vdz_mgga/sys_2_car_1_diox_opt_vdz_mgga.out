@@ -282,3 +282,132 @@ $end
  OpenMP BLAS3 based DFT computing Module                
  Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
  -------------------------------------------------------
+ Nonlocal correlation = 0.579436210276
+ A unrestricted SCF calculation will be
+ performed using DIIS, GDM
+ SCF converges when RMS gradient is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+ Nonlocal correlation = 6.060328744257e-01
+    1   -2039.4832182567      2.96e-02  
+    2   -2035.6269220243      3.53e-03  Done DIIS. Switching to GDM
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+ Nonlocal correlation = 6.032481478885e-01
+    1   -2035.6269220243      1.28e-01   Descent step
+ Nonlocal correlation = 6.000847695445e-01
+    2   -2035.9528841389      8.34e-02   Descent step
+ Nonlocal correlation = 5.991558915527e-01
+    3   -2036.0455533666      5.52e-02   Normal BFGS step
+ Nonlocal correlation = 5.998040564779e-01
+    4   -2036.0754302209      1.10e-01   Descent step
+ Nonlocal correlation = 5.993511181257e-01
+    5   -2035.9990203705      4.54e-01  Line search: overstep
+ Nonlocal correlation = 5.996153586279e-01
+    6   -2036.0980317464      1.19e-01   Dog-leg BFGS step
+ Nonlocal correlation = 5.994917051973e-01
+    7   -2036.0965568720      3.29e-01  Line search: overstep
+ Nonlocal correlation = 5.998415859022e-01
+    8   -2036.1246696650      6.33e-02   Dog-leg BFGS step
+ Nonlocal correlation = 6.003923187333e-01
+    9   -2036.1418431413      8.43e-02   Normal BFGS step
+ Nonlocal correlation = 5.995843823824e-01
+   10   -2036.1519992501      2.24e-01   Normal BFGS step
+ Nonlocal correlation = 6.000359490837e-01
+   11   -2036.1441954799      1.71e-01  Line search: overstep
+ Nonlocal correlation = 5.995078090869e-01
+   12   -2036.1611268381      4.80e-02   Normal BFGS step
+ Nonlocal correlation = 5.998535993553e-01
+   13   -2036.1507131138      2.14e-01  Line search: overstep
+ Nonlocal correlation = 5.997436677416e-01
+   14   -2036.1649000762      4.04e-02   Normal BFGS step
+ Nonlocal correlation = 5.997365233106e-01
+   15   -2036.1652326748      3.29e-02   Normal BFGS step
+ Nonlocal correlation = 5.998067937664e-01
+   16   -2036.1667313695      3.36e-02   Normal BFGS step
+ Nonlocal correlation = 5.997699353802e-01
+   17   -2036.1666480674      3.90e-02  Line search: overstep
+ Nonlocal correlation = 5.997642825483e-01
+   18   -2036.1675113495      1.44e-02   Normal BFGS step
+ Nonlocal correlation = 5.996997323401e-01
+   19   -2036.1677553224      1.03e-02   Normal BFGS step
+ Nonlocal correlation = 5.996884932271e-01
+   20   -2036.1679310890      6.72e-03   Normal BFGS step
+ Nonlocal correlation = 5.996682933078e-01
+   21   -2036.1680274080      2.57e-03   Normal BFGS step
+ Nonlocal correlation = 5.996805732407e-01
+   22   -2036.1680349191      3.16e-03   Normal BFGS step
+ Nonlocal correlation = 5.996736941994e-01
+   23   -2036.1680677776      1.56e-03   Normal BFGS step
+ Nonlocal correlation = 5.996731659878e-01
+   24   -2036.1680727262      1.19e-03   Normal BFGS step
+ Nonlocal correlation = 5.996710951065e-01
+   25   -2036.1680792599      1.04e-03   Normal BFGS step
+ Nonlocal correlation = 5.996691138615e-01
+   26   -2036.1680860399      8.78e-04   Normal BFGS step
+ Nonlocal correlation = 5.996640865603e-01
+   27   -2036.1680908970      8.38e-04   Normal BFGS step
+ Nonlocal correlation = 5.996638465797e-01
+   28   -2036.1680975086      1.24e-03   Normal BFGS step
+ Nonlocal correlation = 5.996641056310e-01
+   29   -2036.1681019736      1.00e-03   Normal BFGS step
+ Nonlocal correlation = 5.996674432445e-01
+   30   -2036.1681047156      1.41e-03   Normal BFGS step
+ Nonlocal correlation = 5.996664040975e-01
+   31   -2036.1681086950      1.23e-03   Normal BFGS step
+ Nonlocal correlation = 5.996640982882e-01
+   32   -2036.1681130214      7.20e-04   Normal BFGS step
+ Nonlocal correlation = 5.996677860058e-01
+   33   -2036.1681197356      8.62e-04   Normal BFGS step
+ Nonlocal correlation = 5.996710386776e-01
+   34   -2036.1681302811      1.08e-03   Normal BFGS step
+ Nonlocal correlation = 5.996662195731e-01
+   35   -2036.1681372065      1.25e-03   Normal BFGS step
+ Nonlocal correlation = 5.996727526724e-01
+   36   -2036.1681423005      1.01e-03   Normal BFGS step
+ Nonlocal correlation = 5.996686434205e-01
+   37   -2036.1681394250      4.32e-03  Line search: overstep
+ Nonlocal correlation = 5.996736663520e-01
+   38   -2036.1681440265      9.33e-04   Normal BFGS step
+ Nonlocal correlation = 5.996728419154e-01
+   39   -2036.1681455330      6.13e-04   Normal BFGS step
+ Nonlocal correlation = 5.996692351775e-01
+   40   -2036.1681469387      5.63e-04   Normal BFGS step
+ Nonlocal correlation = 5.996700832707e-01
+   41   -2036.1681481732      4.52e-04   Normal BFGS step
+ Nonlocal correlation = 5.996727618212e-01
+   42   -2036.1681494307      5.12e-04   Normal BFGS step
+ Nonlocal correlation = 5.996730775724e-01
+   43   -2036.1681501259      6.00e-04   Normal BFGS step
+ Nonlocal correlation = 5.996729923834e-01
+   44   -2036.1681507002      2.91e-04   Normal BFGS step
+ Nonlocal correlation = 5.996724305663e-01
+   45   -2036.1681508993      2.22e-04   Normal BFGS step
+ Nonlocal correlation = 5.996730041611e-01
+   46   -2036.1681511072      2.03e-04   Normal BFGS step
+ Nonlocal correlation = 5.996727802723e-01
+   47   -2036.1681512953      1.97e-04   Normal BFGS step
+ Nonlocal correlation = 5.996739416274e-01
+   48   -2036.1681514799      1.54e-04   Normal BFGS step
+ Nonlocal correlation = 5.996748907567e-01
+   49   -2036.1681516420      1.52e-04   Normal BFGS step
+ Nonlocal correlation = 5.996748127469e-01
+   50   -2036.1681517671      2.11e-04   Normal BFGS step
+ Nonlocal correlation = 5.996748962294e-01
+   51   -2036.1681519860      2.17e-04   Normal BFGS step
+ Nonlocal correlation = 5.996762700865e-01
+   52   -2036.1681522311      2.11e-04   Normal BFGS step
+ Nonlocal correlation = 5.996785897505e-01
+   53   -2036.1681524655      1.77e-04   Normal BFGS step
+ Nonlocal correlation = 5.996787975271e-01
+   54   -2036.1681527435      1.59e-04   Normal BFGS step
+ Nonlocal correlation = 5.996790339864e-01
+   55   -2036.1681530015      2.91e-04   Normal BFGS step
+ Nonlocal correlation = 5.996812150115e-01
+   56   -2036.1681532133      1.64e-04   Normal BFGS step
+ Nonlocal correlation = 5.997214656028e-01
+   57   -2036.1681536572      6.00e-04   Normal BFGS step
+ Nonlocal correlation = 5.996839540109e-01
+   58   -2036.1680693010      2.00e-02  Line search: overstep

@@ -1802,3 +1802,37 @@ $end
    24   -2714.1133072145      3.37e-05   Normal BFGS step
  Nonlocal correlation = 9.892214409918e-01
    25   -2714.1133072270      2.05e-05   Normal BFGS step
+ Nonlocal correlation = 9.892215642795e-01
+   26   -2714.1133072321      2.53e-05   Normal BFGS step
+ Nonlocal correlation = 9.892211949232e-01
+   27   -2714.1133072376      1.18e-05   Normal BFGS step
+ Nonlocal correlation = 9.892210974662e-01
+   28   -2714.1133072388      5.73e-05   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 1.55e-08
+ Nonlocal correlation = 9.892214074744e-01
+   29   -2714.1133072296      2.33e-04   Normal BFGS step
+ Nonlocal correlation = 9.892214598525e-01
+   30   -2714.1133072403      1.85e-05   Normal BFGS step
+ Nonlocal correlation = 9.892213574684e-01
+   31   -2714.1133072385      4.73e-05   Normal BFGS step
+ Nonlocal correlation = 9.892212932300e-01
+   32   -2714.1133072414      1.94e-05   Normal BFGS step
+ Nonlocal correlation = 9.892213278583e-01
+   33   -2714.1133072397      3.29e-05   Normal BFGS step
+ Nonlocal correlation = 9.892214800050e-01
+   34   -2714.1133072419      8.15e-06   Normal BFGS step
+ Nonlocal correlation = 9.892213564527e-01
+   35   -2714.1133072412      3.11e-05   Normal BFGS step
+ Nonlocal correlation = 9.892213414520e-01
+   36   -2714.1133072421      3.64e-06   Normal BFGS step
+ Nonlocal correlation = 9.892213461014e-01
+   37   -2714.1133072421      5.46e-06   Normal BFGS step
+ Nonlocal correlation = 9.892213565905e-01
+   38   -2714.1133072423      1.83e-06   Normal BFGS step
+ Nonlocal correlation = 9.892213550556e-01
+   39   -2714.1133072423      2.30e-06   Normal BFGS step
+ Nonlocal correlation = 9.892213356407e-01
+   40   -2714.1133072423      2.01e-06   Normal BFGS step

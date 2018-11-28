@@ -150,3 +150,264 @@ SCF_ALGORITHM = DIIS_GDM
 $end
 --------------------------------------------------------------
  ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Fe     -1.6790327831     3.9120688508    -0.1759868447
+    2      O      -0.9206306281     2.2590553711     0.1367376498
+    3      O      -0.8632566873     1.1641712257    -0.5349990644
+    4      H       3.8492887650    -1.6152897945     1.6336431798
+    5      H       4.4067018283    -2.7791028231     0.3924220750
+    6      C       3.5297011320    -2.2237013646     0.7713899478
+    7      H       2.8013419408    -2.9652928386     1.1412646216
+    8      H       4.4848333209     0.4253209936     1.1450174858
+    9      H       4.9222834430    -0.8449729293    -1.0223787493
+   10      C       4.1618338141     0.8222139935     0.1658693840
+   11      C       2.9256577000    -1.3482037990    -0.3484414568
+   12      C       3.9703412248    -0.3182744685    -0.8261733349
+   13      H       4.9605595341     1.5046909266    -0.1706266636
+   14      H      -1.1570587479    -3.5733379693     1.6625169665
+   15      H       0.7424444179    -2.5646702482     0.6024537176
+   16      H       3.5155275472    -2.6747730325    -1.9742397905
+   17      C       2.5866677752    -2.2494168884    -1.5533150055
+   18      C       1.6553325138    -0.6444177581     0.1757383692
+   19      H       2.9076625974     2.2841005702     1.1766506146
+   20      H       1.9272934054    -3.0884183287    -1.2780807716
+   21      C       2.8460127812     1.5778968663     0.3281814762
+   22      C       0.5003815058    -1.5336855004     0.3184703969
+   23      C      -1.6165987268    -3.5801153837     0.6585286526
+   24      C       1.6423608321     0.6812257092     0.5170716860
+   25      H      -0.8965090636    -4.0790282712    -0.0145501671
+   26      H       0.7702883683     2.1541600538     1.8244445380
+   27      H      -2.5130030960    -4.2104442391     0.7100425437
+   28      H       3.6356323287     0.1014122890    -1.7947865035
+   29      C       0.4463525212     1.3869307661     1.0991829321
+   30      H      -0.2468811717     0.7003953207     1.6071879903
+   31      C      -0.8086528174    -1.2496953373     0.0618702451
+   32      H       2.0828226939    -1.6710016432    -2.3465117894
+   33      H       2.6741687998     2.2182351243    -0.5642924458
+   34      C      -1.9158255507    -2.1815296707     0.1910176566
+   35      H      -0.1361676770     1.9225423137     0.3239672339
+   36      H      -1.0765271658    -0.2535204623    -0.3021115288
+   37      H      -4.3630412284    -3.5441990722     0.2353971434
+   38      C      -3.1817550409    -1.7435934937    -0.1137827872
+   39      C      -4.4146778740    -2.4912157135    -0.0598501990
+   40      H      -3.2804435626    -0.6989120267    -0.4352350826
+   41      C      -5.6281755159    -1.9659567017    -0.3570208464
+   42      H      -6.5424200978    -2.5604997116    -0.3074331076
+   43      H      -5.7365839440    -0.9177646316    -0.6554349325
+ ----------------------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =  1727.4958292643 hartrees
+ There are       82 alpha and       78 beta electrons
+ Requested basis set is VDZ
+ There are 147 shells and 231 basis functions
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+ A cutoff of  1.0D-12 yielded   8640 shell pairs
+ There are     21450 function pairs (     21739 Cartesian)
+ 
+ -------------------------------------------------------
+ OpenMP Integral Computing Module                       
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ Integral Job Info:
+ Integral job number is                      11
+ Integral operator is                         1
+ short-range coefficients                     0
+ long-range coefficients              100000000
+ Omega coefficients                           0
+ if combine SR and LR in K                    0
+ Integral screening is                        0
+ Integral computing path is                   2
+ max size of driver memory is            800000
+ size of driver memory is                593474
+ size of scratch memory is             29634545
+ max col of scratch BK array               1296
+ max len of scratch array in speh3          155
+ max len of scratch index in speh4           18
+ max int batch size is                      520
+ min int batch size is                       52
+ fixed nKL is                                45
+ max L of basis functions is                  2
+ order of int derivative is                   0
+ number of shells is                        147
+ number of basis is                         233
+ number of cartesian basis is               233
+ number of contracted shell pairs          8640
+ number of primitive shell pairs          24362
+ maxK2 (contraction) of shell pair           36
+ max number of K2 of shell pair               1
+ max number of CS2 of shell pair           2070
+ max number of PS2 of shell pair           5220
+ mem total for path MDJ                  588968
+ -------------------------------------------------------
+ Smallest overlap matrix eigenvalue = 8.85E-04
+
+ Scale SEOQF with 1.000000e-02/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =     0.0000000608 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 162.000000 electrons
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+ Exchange:  B97M-V      Correlation:  B97M-V
+ Using SG-2 standard quadrature grid
+ Nonlocal Correlation:  rVV10 with C = 0.0100 and b = 6.00 and scale = 1.00000
+ Grid used for NLC:  SG-1 standard quadrature
+ using 12 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ Nonlocal correlation = 0.581844523941
+ A unrestricted SCF calculation will be
+ performed using DIIS, GDM
+ SCF converges when RMS gradient is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+ Nonlocal correlation = 6.060934215473e-01
+    1   -2040.1187586728      3.15e-02  
+    2   -2033.9466953091      7.22e-03  Done DIIS. Switching to GDM
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+ Nonlocal correlation = 6.046306958393e-01
+    1   -2033.9466953091      6.18e-01   Descent step
+ Nonlocal correlation = 6.041013240364e-01
+    2   -2034.6947045572      1.10e+00   Descent step
+ Nonlocal correlation = 6.036105280299e-01
+    3   -2035.2074173970      5.09e-01   Descent step
+ Nonlocal correlation = 6.024809801845e-01
+    4   -2035.5421193558      2.18e-01   Descent step
+ Nonlocal correlation = 6.019995032728e-01
+    5   -2035.6105965442      3.52e-01   Descent step
+ Nonlocal correlation = 6.015602634310e-01
+    6   -2035.7251369642      2.98e-01   Descent step
+ Nonlocal correlation = 6.018253217699e-01
+    7   -2035.6379687680      5.69e-01  Line search: overstep
+ Nonlocal correlation = 6.017564365023e-01
+    8   -2035.7842569207      2.13e-01   Descent step
+ Nonlocal correlation = 6.017974749178e-01
+    9   -2035.7643170594      4.42e-01  Line search: overstep
+ Nonlocal correlation = 6.012093197232e-01
+   10   -2035.8266144248      2.34e-01   Descent step
+ Nonlocal correlation = 6.016362280921e-01
+   11   -2035.6986765029      3.47e-01  Line search: overstep
+ Nonlocal correlation = 6.016260691370e-01
+   12   -2035.8489426349      2.16e-01   Descent step
+ Nonlocal correlation = 6.016457107362e-01
+   13   -2035.7034317726      4.33e-01  Line search: overstep
+ Nonlocal correlation = 6.011476332205e-01
+   14   -2035.8647490698      1.26e-01   Descent step
+ Nonlocal correlation = 6.015434222786e-01
+   15   -2035.7366073053      3.88e-01  Line search: overstep
+ Nonlocal correlation = 6.013410239883e-01
+   16   -2035.8758123966      2.34e-01   Normal BFGS step
+ Nonlocal correlation = 6.016556300132e-01
+   17   -2035.8824174946      3.25e-01   Normal BFGS step
+ Nonlocal correlation = 6.012158145661e-01
+   18   -2035.8987431503      7.08e-02   Normal BFGS step
+ Nonlocal correlation = 6.014543468091e-01
+   19   -2035.8972731235      8.09e-02  Line search: overstep
+ Nonlocal correlation = 6.014504165439e-01
+   20   -2035.9024327543      6.69e-02   Normal BFGS step
+ Nonlocal correlation = 6.014620978108e-01
+   21   -2035.9052901212      9.15e-02   Normal BFGS step
+ Nonlocal correlation = 6.016564166612e-01
+   22   -2035.9072719575      1.07e-01   Normal BFGS step
+ Nonlocal correlation = 6.013589357483e-01
+   23   -2035.9101495297      2.99e-02   Normal BFGS step
+ Nonlocal correlation = 6.016057915526e-01
+   24   -2035.9122504157      3.44e-02   Normal BFGS step
+ Nonlocal correlation = 6.015821294067e-01
+   25   -2035.9138882900      3.70e-02   Normal BFGS step
+ Nonlocal correlation = 6.015087641070e-01
+   26   -2035.9142936486      1.29e-02   Normal BFGS step
+ Nonlocal correlation = 6.015630634072e-01
+   27   -2035.9149544286      2.52e-02   Normal BFGS step
+ Nonlocal correlation = 6.015592260720e-01
+   28   -2035.9150206481      1.25e-02   Normal BFGS step
+ Nonlocal correlation = 6.015414763729e-01
+   29   -2035.9153576127      4.31e-03   Normal BFGS step
+ Nonlocal correlation = 6.015569240266e-01
+   30   -2035.9154751815      2.68e-03   Normal BFGS step
+ Nonlocal correlation = 6.015460315563e-01
+   31   -2035.9155343314      6.36e-03   Normal BFGS step
+ Nonlocal correlation = 6.015566443149e-01
+   32   -2035.9155633832      2.43e-03   Normal BFGS step
+ Nonlocal correlation = 6.015568137332e-01
+   33   -2035.9155753191      3.97e-03   Normal BFGS step
+ Nonlocal correlation = 6.015512678097e-01
+   34   -2035.9155852065      7.46e-04   Normal BFGS step
+ Nonlocal correlation = 6.015570023031e-01
+   35   -2035.9155927617      1.86e-03   Normal BFGS step
+ Nonlocal correlation = 6.015559837348e-01
+   36   -2035.9155981983      6.72e-04   Normal BFGS step
+ Nonlocal correlation = 6.015560090594e-01
+   37   -2035.9155988000      1.54e-03   Normal BFGS step
+ Nonlocal correlation = 6.015591750591e-01
+   38   -2035.9155993427      1.04e-03   Normal BFGS step
+ Nonlocal correlation = 6.015545510896e-01
+   39   -2035.9156000301      3.76e-04   Normal BFGS step
+ Nonlocal correlation = 6.015562494422e-01
+   40   -2035.9156000432      3.56e-04   Normal BFGS step
+ Nonlocal correlation = 6.015590049843e-01
+   41   -2035.9156003496      4.18e-04   Normal BFGS step
+ Nonlocal correlation = 6.015574117749e-01
+   42   -2035.9156002258      5.59e-04  Line search: overstep
+ Nonlocal correlation = 6.015567607009e-01
+   43   -2035.9156004903      8.28e-05   Normal BFGS step
+ Nonlocal correlation = 6.015566255698e-01
+   44   -2035.9156005272      8.12e-05   Normal BFGS step
+ Nonlocal correlation = 6.015568107275e-01
+   45   -2035.9156005628      1.22e-04   Normal BFGS step
+ Nonlocal correlation = 6.015570840186e-01
+   46   -2035.9156005650      3.15e-04   Normal BFGS step
+ Nonlocal correlation = 6.015567204243e-01
+   47   -2035.9156006074      6.00e-05   Normal BFGS step
+ Nonlocal correlation = 6.015567980216e-01
+   48   -2035.9156006225      6.37e-05   Normal BFGS step
+ Nonlocal correlation = 6.015567763631e-01
+   49   -2035.9156006580      7.95e-05   Normal BFGS step
+ Nonlocal correlation = 6.015567360598e-01
+   50   -2035.9156006800      4.71e-05   Normal BFGS step
+ Nonlocal correlation = 6.015569112307e-01
+   51   -2035.9156006901      6.50e-05   Normal BFGS step
+ Nonlocal correlation = 6.015566390642e-01
+   52   -2035.9156007063      6.16e-05   Normal BFGS step
+ Nonlocal correlation = 6.015564659913e-01
+   53   -2035.9156007267      4.63e-05   Normal BFGS step
+ Nonlocal correlation = 6.015563764444e-01
+   54   -2035.9156007657      5.49e-05   Normal BFGS step
+ Nonlocal correlation = 6.015569091351e-01
+   55   -2035.9156008231      3.56e-04   Normal BFGS step
+ Nonlocal correlation = 6.015562957287e-01
+   56   -2035.9156008239      3.12e-04   Normal BFGS step
+ Nonlocal correlation = 6.015562371664e-01
+   57   -2035.9156008773      1.56e-04   Normal BFGS step
+ Nonlocal correlation = 6.015562693392e-01
+   58   -2035.9156008661      1.85e-04  Line search: overstep
