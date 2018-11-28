@@ -46,7 +46,7 @@ H         -5.00120       -3.71209        0.30670
 $end
 
 $rem
-BASIS = STO3G
+BASIS = STO-3G
 METHOD  = BLYP
 JOBTYPE = OPT
 MAX_SCF_CYCLES = 500
