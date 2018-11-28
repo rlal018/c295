@@ -1,0 +1,28 @@
+#!/bin/tcsh -f
+#$ -cwd
+#$ -o int_ts_sto3g_gga2.job.o$JOB_ID
+#$ -q cubs.q
+#$ -j y
+#$ -N q-int_ts_sto3g_gga2
+#$ -pe shared 12
+
+
+setenv QC /usr/software/qchem_511
+source /usr/software/qchem_511/MGCF_qcenv.csh
+
+cd $SGE_O_WORKDIR
+/bin/hostname
+
+set echo
+setenv PATH /usr/software/nbo6_g16/bin:${PATH}
+setenv NBOEXE /usr/software/nbo6_g16/bin/nbo6.i8.exe
+awk '{ print $1 }' $PE_HOSTFILE > int_ts_sto3g_gga2.nodes
+setenv QCMACHINEFILE int_ts_sto3g_gga2.nodes
+setenv QCSCRATCH $SGE_O_WORKDIR/$JOB_ID
+/bin/mkdir -p $QCSCRATCH
+setenv QCLOCALSCR /scr/$USER/$JOB_ID
+/bin/mkdir -p $QCLOCALSCR
+/usr/bin/env
+
+/usr/software/qchem_511/bin/qchem -nt 12 int_ts_sto3g_gga2.in int_ts_sto3g_gga2.out
+

@@ -161,3 +161,19 @@ cub-0-18.local
 # env setting
 #
 exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+forrtl: No such file or directory
+forrtl: severe (38): error during write, unit -1, file /proc/24020/fd/1
+Image              PC                Routine            Line        Source             
+qcprog.exe.LINUX_  000000001759C723  Unknown               Unknown  Unknown
+qcprog.exe.LINUX_  00000000176082C3  Unknown               Unknown  Unknown
+qcprog.exe.LINUX_  0000000017603B5B  Unknown               Unknown  Unknown
+qcprog.exe.LINUX_  000000000C7917E1  Unknown               Unknown  Unknown
+qcprog.exe.LINUX_  000000000C77C86B  Unknown               Unknown  Unknown
+qcprog.exe.LINUX_  0000000000433C7A  Unknown               Unknown  Unknown
+qcprog.exe.LINUX_  00000000004309C2  Unknown               Unknown  Unknown
+qcprog.exe.LINUX_  000000000042F7E1  Unknown               Unknown  Unknown
+libc-2.12.so       000000376F61ED1D  __libc_start_main     Unknown  Unknown
+qcprog.exe.LINUX_  0000000000409849  Unknown               Unknown  Unknown
+remove work dirs /scr/c295_lal/157312/qchem24010.0 -- /scr/c295_lal/157312/qchem24010.0
+rm -rf /scr/c295_lal/157312/qchem24010.0
+rm -rf /scr/c295_lal/157312/qchem24010
