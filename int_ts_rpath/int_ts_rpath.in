@@ -62,5 +62,6 @@ $rem
    BASIS              sto-3g
    METHOD             BLYP
    SCF_GUESS          read
-   RPATH_MAX_CYCLES   30
+   RPATH_MAX_CYCLES   10
+   RPATH_MAX_STEPSIZE 50
 $end
