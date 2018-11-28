@@ -47,7 +47,7 @@ $end
 
 $rem
    JOBTYPE         freq
-   METHOD        BLYP
+   EXCHANGE        B3LYP
    BASIS           STO-3G
    SCF_MAX_CYCLES  250
    SYMMETRY        false
@@ -61,7 +61,7 @@ $rem
    SCF_GUESS            read
    GEOM_OPT_DMAX        100
    GEOM_OPT_MAX_CYCLES  1500
-   METHOD             BLYP
+EXCHANGE        B3LYP
    BASIS                STO-3G
    MAX_SCF_CYCLES       250
    GEOM_OPT_HESSIAN     read
