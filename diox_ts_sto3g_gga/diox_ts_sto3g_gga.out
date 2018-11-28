@@ -1,7 +1,7 @@
 
 Running Job 1 of 2 diox_ts_sto3g_gga.in
-qchem diox_ts_sto3g_gga.in_29544.0 /scr/c295_lal/157324/qchem29544/ 1
-/usr/software/qchem_511/exe/qcprog.exe_s diox_ts_sto3g_gga.in_29544.0 /scr/c295_lal/157324/qchem29544/
+qchem diox_ts_sto3g_gga.in_2651.0 /scr/c295_lal/157329/qchem2651/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s diox_ts_sto3g_gga.in_2651.0 /scr/c295_lal/157329/qchem2651/
 Check license passed
 
                   Welcome to Q-Chem
@@ -73,12 +73,12 @@ Check license passed
  Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
  http://arma.sourceforge.net/
 
- Q-Chem begins on Wed Nov 28 00:14:15 2018  
+ Q-Chem begins on Wed Nov 28 08:02:45 2018  
 
-Host: cub-0-12.local
+Host: cub-0-13.local
 0
 
-     Scratch files written to /scr/c295_lal/157324/qchem29544//
+     Scratch files written to /scr/c295_lal/157329/qchem2651//
  Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
 Processing $rem in /usr/software/qchem_511/config/preferences.
  MEM_TOTAL  2000 
@@ -95,8 +95,8 @@ Processing $rem in /usr/software/qchem_511/config/preferences.
  
 
 Running Job 2 of 2 diox_ts_sto3g_gga.in
-qchem diox_ts_sto3g_gga.in_29544.1 /scr/c295_lal/157324/qchem29544/ 1
-/usr/software/qchem_511/exe/qcprog.exe_s diox_ts_sto3g_gga.in_29544.1 /scr/c295_lal/157324/qchem29544/
+qchem diox_ts_sto3g_gga.in_2651.1 /scr/c295_lal/157329/qchem2651/ 1
+/usr/software/qchem_511/exe/qcprog.exe_s diox_ts_sto3g_gga.in_2651.1 /scr/c295_lal/157329/qchem2651/
 Check license passed
 
                   Welcome to Q-Chem
@@ -168,12 +168,12 @@ Check license passed
  Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
  http://arma.sourceforge.net/
 
- Q-Chem begins on Wed Nov 28 00:14:15 2018  
+ Q-Chem begins on Wed Nov 28 08:02:45 2018  
 
-Host: cub-0-12.local
+Host: cub-0-13.local
 0
 
-     Scratch files written to /scr/c295_lal/157324/qchem29544//
+     Scratch files written to /scr/c295_lal/157329/qchem2651//
  Aug318 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
 Processing $rem in /usr/software/qchem_511/config/preferences.
  MEM_TOTAL  2000 

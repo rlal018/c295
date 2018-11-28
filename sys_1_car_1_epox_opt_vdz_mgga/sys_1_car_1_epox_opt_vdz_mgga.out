@@ -1880,3 +1880,11 @@ $end
    62   -2714.2631551461      4.73e-08   Normal BFGS step
  Nonlocal correlation = 9.821107226884e-01
    63   -2714.2631551461      1.65e-07   Normal BFGS step
+ Nonlocal correlation = 9.821107227155e-01
+   64   -2714.2631551461      1.52e-08   Normal BFGS step
+ Nonlocal correlation = 9.821107227095e-01
+   65   -2714.2631551461      1.44e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 8.19e-09

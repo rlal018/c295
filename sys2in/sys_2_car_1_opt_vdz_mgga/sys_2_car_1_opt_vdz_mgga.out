@@ -4211,3 +4211,29 @@ $end
    48   -2036.1783605345      1.29e-06   Normal BFGS step
  Nonlocal correlation = 6.047691984288e-01
    49   -2036.1783605346      1.32e-06   Normal BFGS step
+ Nonlocal correlation = 6.047691964290e-01
+   50   -2036.1783605345      3.33e-07   Normal BFGS step
+ Nonlocal correlation = 6.047691976257e-01
+   51   -2036.1783605345      3.50e-07   Normal BFGS step
+ Nonlocal correlation = 6.047691977829e-01
+   52   -2036.1783605346      9.46e-08   Normal BFGS step
+ Nonlocal correlation = 6.047691978111e-01
+   53   -2036.1783605346      6.61e-08   Normal BFGS step
+ Nonlocal correlation = 6.047691974456e-01
+   54   -2036.1783605345      7.43e-08   Normal BFGS step
+ Nonlocal correlation = 6.047691976131e-01
+   55   -2036.1783605346      6.35e-08   Normal BFGS step
+ Nonlocal correlation = 6.047691978199e-01
+   56   -2036.1783605346      2.29e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 4.41e-09
+ Nonlocal correlation = 6.047691977890e-01
+   57   -2036.1783605345      2.29e-08   Normal BFGS step
+ Nonlocal correlation = 6.047691976335e-01
+   58   -2036.1783605345      1.19e-08   Normal BFGS step
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::WARNING energy changes are now smaller than effective accuracy.
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        calculation will continue, but THRESH should be increased
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        or SCF_CONVERGENCE decreased. 
+  /scratch/qcdevops/jenkins/workspace/build_qchem_linux_distrib/tags/qc511/qchem/libgscf/libgscf/opt/gdm.C::        effective_thresh = 4.41e-09
