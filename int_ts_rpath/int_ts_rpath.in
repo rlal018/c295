@@ -63,5 +63,5 @@ $rem
    METHOD             BLYP
    SCF_GUESS          read
    RPATH_MAX_CYCLES   10
-   RPATH_MAX_STEPSIZE 50
+   RPATH_MAX_STEPSIZE 20
 $end
